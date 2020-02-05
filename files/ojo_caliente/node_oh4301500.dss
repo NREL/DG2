@@ -1,0 +1,1460 @@
+clear
+
+
+!Creating new circuit
+New circuit.node_oh4301500
+~ basekv=12.469634207968305 pu=0.9776002949931218 phases=3 bus1=node_oh4301500.1.2.3
+~ mvasc3=20000 mvasc1=21000 
+
+redirect transformercodes.dss
+
+redirect wiredata.dss
+
+redirect linegeometry.dss
+
+!line definations
+new line.oh4301105 bus1=node_oh4301053.3 bus2=node_oh4301105.3 switch=n length=384.43315738893403 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301124 bus1=node_64044-cp571113943-56704.1.2.3 bus2=node_oh4301124.1.2.3 switch=n length=163.834472868175 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.ug4301286 bus1=node_ocd4300153.1 bus2=node_ug4301286.1 switch=n length=43.6827586125436 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug4307481 bus1=node_ocd4307480.3 bus2=node_ug4307481.3 switch=n length=480.29375365491404 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.oh4307470 bus1=node_oh4307466.3 bus2=node_oh4307470.3 switch=n length=253.768068125284 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307467 bus1=node_ocd4307468.3 bus2=node_oh4307467.3 switch=n length=1012.20214606572 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.ug_3_32_15_3_2 bus1=node_ocd4303060.3 bus2=node_ug_3_32_15_3_2.3 switch=n length=1412.3622599219102 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug_3_32_15_1_0001 bus1=node_ug_3_32_15_3_0001.3 bus2=node_ug_3_32_15_1_0001.3 switch=n length=552.259297845894 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug_3_32_15_3_0004 bus1=node_ug_3_32_15_3_0002.3 bus2=node_ug_3_32_15_3_0004.3 switch=n length=242.986846931154 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.oh4307435 bus1=node_oh4301470.3 bus2=node_oh4307435.3 switch=n length=545.690653209385 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301473 bus1=node_oh4301470.3 bus2=node_oh4301473.3 switch=n length=115.532243551467 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307429 bus1=node_ocd4300203.3 bus2=node_oh4307429.3 switch=n length=538.498860258712 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4303149 bus1=node_oh4303146.3 bus2=node_oh4303149.3 switch=n length=371.12414661391 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.ug4303147 bus1=node_ocd4303056.3 bus2=node_ug4303147.3 switch=n length=469.535947292623 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug4307353 bus1=node_ocd4307352.3 bus2=node_ug4307353.3 switch=n length=233.85855318975499 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug4301579 bus1=node_ocd4300174.2 bus2=node_ug4301579.2 switch=n length=89.2883710234727 units=ft geometry=none:none:1 enabled=true phases=1 
+new line.oh4303903 bus1=node_oh4301581.2 bus2=node_oh4303903.2 switch=n length=677.472985734377 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.ug4303904 bus1=node_oh4301581.2 bus2=node_ug4303904.2 switch=n length=303.89547956485 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.oh4301248 bus1=node_oh4301247.1.2.3 bus2=node_oh4301248.1.2.3 switch=n length=107.43825482572599 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.ug4301249 bus1=node_ocd4300150.3 bus2=node_ug4301249.3 switch=n length=758.86651085683 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug4301169 bus1=node_ocd4300055.3 bus2=node_ug4301169.3 switch=n length=181.012036340088 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.oh4301886 bus1=node_oh4301884.1.2.3 bus2=node_oh4301886.1.2.3 switch=n length=213.03320914822498 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.ug4301885 bus1=node_ocd4302602.1.2.3 bus2=node_ug4301885.1.2.3 switch=n length=167.280359277458 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:3 enabled=true phases=3 
+new line.oh4301926 bus1=node_oh4301915.1.2.3 bus2=node_oh4301926.1.2.3 switch=n length=411.76203710394697 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.ug4301916 bus1=node_ocd4308022.1.2.3 bus2=node_ug4301916.1.2.3 switch=n length=138.659730635872 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:3 enabled=true phases=3 
+new line.ug4301973 bus1=node_ocd4300047.1.2.3 bus2=node_ug4301973.1.2.3 switch=n length=221.47015023212998 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:3 enabled=true phases=3 
+new line.oh4300203 bus1=node_oh4302612.2 bus2=node_oh4300203.2 switch=n length=471.105250766632 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301574 bus1=node_ocd4303894.3 bus2=node_oh4301574.3 switch=n length=448.559509652889 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.ug4303896 bus1=node_ocd4303895.2 bus2=node_ug4303896.2 switch=n length=237.263371172198 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.oh4302611 bus1=node_oh4302609.3 bus2=node_oh4302611.3 switch=n length=1.0 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302610 bus1=node_oh4302609.1.2.3 bus2=node_oh4302610.1.2.3 switch=n length=85.7131040156077 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301961 bus1=node_oh4302609.1.2.3 bus2=node_oh4301961.1.2.3 switch=n length=1.0 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:3 enabled=true phases=3 
+new line.ug4301966 bus1=node_ocd4302743.1.2.3 bus2=node_ug4301966.1.2.3 switch=n length=143.83326040930902 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:3 enabled=true phases=3 
+new line.oh4301934 bus1=node_ocd4302623.3 bus2=node_oh4301934.3 switch=n length=251.01994761376702 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.ug4301555 bus1=node_ocd4302603.1.2.3 bus2=node_ug4301555.1.2.3 switch=n length=147.752821969827 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:3 enabled=true phases=3 
+new line.oh4301036 bus1=node_oh4301033.3 bus2=node_oh4301036.3 switch=n length=289.21915047237997 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.ug4301105 bus1=node_ocd4302594.3 bus2=node_ug4301105.3 switch=n length=169.055996639983 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.oh4301121 bus1=node_oh4301111.3 bus2=node_oh4301121.3 switch=n length=142.39994733139602 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.ug4301119 bus1=node_ocd4302595.3 bus2=node_ug4301119.3 switch=n length=228.895665533423 units=ft geometry=none:none:1 enabled=true phases=1 
+new line.ug4301124 bus1=node_ocd4302596.3 bus2=node_ug4301124.3 switch=n length=127.41859558175301 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug4301154 bus1=node_ocd4307828.3 bus2=node_ug4301154.3 switch=n length=349.46546853730905 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.oh4301514 bus1=node_oh4301505.1 bus2=node_oh4301514.1 switch=n length=294.572483609753 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.ug4301524 bus1=node_ocd4303004.1 bus2=node_ug4301524.1 switch=n length=1111.25168242822 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.oh4301501 bus1=node_oh4301500.1.2.3 bus2=node_oh4301501.1.2.3 switch=n length=439.909038893417 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4307317 bus1=node_oh4301501.1.2.3 bus2=node_oh4307317.1.2.3 switch=n length=335.88852868182204 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4307318 bus1=node_oh4307317.1.2.3 bus2=node_oh4307318.1.2.3 switch=n length=14.143896209911402 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301503 bus1=node_oh4307317.1 bus2=node_oh4301503.1 switch=n length=549.726016211696 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301502 bus1=node_reg4302742.1.2.3 bus2=node_oh4301502.1.2.3 switch=n length=346.109703562444 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301031 bus1=node_oh4301502.1.2.3 bus2=node_oh4301031.1.2.3 switch=n length=641.795816284139 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301052 bus1=node_oh4301031.1.2.3 bus2=node_oh4301052.1.2.3 switch=n length=519.746911198117 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301033 bus1=node_oh4301031.3 bus2=node_oh4301033.3 switch=n length=355.85739067762296 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301032 bus1=node_xfmr4301248.3 bus2=node_oh4301032.3 switch=n length=135.191466076625 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301053 bus1=node_oh4301052.1.2.3 bus2=node_oh4301053.1.2.3 switch=n length=380.547012733056 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301535 bus1=node_oh4301052.1.2.3 bus2=node_oh4301535.1.2.3 switch=n length=539.178272930174 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301127 bus1=node_oh4301124.1.2.3 bus2=node_oh4301127.1.2.3 switch=n length=258.134485298017 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301125 bus1=node_xfmr4301136.3 bus2=node_oh4301125.3 switch=n length=70.8279506976553 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301126 bus1=node_xfmr4301136.3 bus2=node_oh4301126.3 switch=n length=116.7769634817 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301140 bus1=node_oh4301127.1.2.3 bus2=node_oh4301140.1.2.3 switch=n length=384.289832938524 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301176 bus1=node_oh4301140.1.2.3 bus2=node_oh4301176.1.2.3 switch=n length=327.360589106322 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301168 bus1=node_oh4301140.3 bus2=node_oh4301168.3 switch=n length=150.044061861936 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301143 bus1=node_oh4301140.2 bus2=node_oh4301143.2 switch=n length=292.881612942859 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301193 bus1=node_oh4301176.1.2.3 bus2=node_oh4301193.1.2.3 switch=n length=381.370901485568 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301210 bus1=node_oh4301193.1.2.3 bus2=node_oh4301210.1.2.3 switch=n length=327.70845121852403 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301197 bus1=node_xfmr4301195.3 bus2=node_oh4301197.3 switch=n length=90.77029139538651 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301204 bus1=node_oh4301197.3 bus2=node_oh4301204.3 switch=n length=120.822304646261 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301227 bus1=node_oh4301210.1.2.3 bus2=node_oh4301227.1.2.3 switch=n length=261.50264339003104 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301221 bus1=node_xfmr4301223.3 bus2=node_oh4301221.3 switch=n length=56.769577239856794 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301212 bus1=node_xfmr4301223.3 bus2=node_oh4301212.3 switch=n length=59.491176656819896 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301222 bus1=node_oh4301221.3 bus2=node_oh4301222.3 switch=n length=104.656436973598 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301247 bus1=node_oh4301227.1.2.3 bus2=node_oh4301247.1.2.3 switch=n length=125.394454821702 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301231 bus1=node_oh4301227.3 bus2=node_oh4301231.3 switch=n length=29.7607835254703 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301251 bus1=node_oh4301248.1.2.3 bus2=node_oh4301251.1.2.3 switch=n length=233.50365243398102 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301265 bus1=node_oh4301251.1.2.3 bus2=node_oh4301265.1.2.3 switch=n length=381.242030867547 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301253 bus1=node_oh4301251.1 bus2=node_oh4301253.1 switch=n length=268.27257817376 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301269 bus1=node_oh4301265.1.2.3 bus2=node_oh4301269.1.2.3 switch=n length=287.210493192597 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301270 bus1=node_oh4301269.1.2.3 bus2=node_oh4301270.1.2.3 switch=n length=313.46047805122396 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301273 bus1=node_oh4301270.3 bus2=node_oh4301273.3 switch=n length=425.127150979573 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301275 bus1=node_oh4301270.1 bus2=node_oh4301275.1 switch=n length=595.0660497793219 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301276 bus1=node_oh4301270.1.2.3 bus2=node_oh4301276.1.2.3 switch=n length=377.919783155114 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301271 bus1=node_xfmr4301280.3 bus2=node_oh4301271.3 switch=n length=101.80231677131201 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301272 bus1=node_xfmr4301280.3 bus2=node_oh4301272.3 switch=n length=150.659956524819 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4300151 bus1=node_oh4301273.3 bus2=node_oh4300151.3 switch=n length=408.27737201569 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301578 bus1=node_oh4300151.3 bus2=node_oh4301578.3 switch=n length=450.57958597785597 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301284 bus1=node_xfmr4301285.1 bus2=node_oh4301284.1 switch=n length=116.380088503081 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301295 bus1=node_oh4301276.1.2.3 bus2=node_oh4301295.1.2.3 switch=n length=382.087700011334 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301277 bus1=node_oh4301276.1 bus2=node_oh4301277.1 switch=n length=166.76145148107 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301298 bus1=node_oh4301295.1.2.3 bus2=node_oh4301298.1.2.3 switch=n length=298.239312130259 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301296 bus1=node_xfmr4301297.2 bus2=node_oh4301296.2 switch=n length=142.08237786583598 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301301 bus1=node_oh4301298.1.2.3 bus2=node_oh4301301.1.2.3 switch=n length=284.453829645598 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301299 bus1=node_oh4301298.1.2.3 bus2=node_oh4301299.1.2.3 switch=n length=1.0 units=ft geometry=trip-#1/0:trip-#1/0:3 enabled=true phases=3 
+new line.oh4301305 bus1=node_oh4301301.1.2.3 bus2=node_oh4301305.1.2.3 switch=n length=330.57460580025 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301303 bus1=node_xfmr4301302.1 bus2=node_oh4301303.1 switch=n length=82.9878165755934 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301304 bus1=node_xfmr4301302.1 bus2=node_oh4301304.1 switch=n length=115.406661852719 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301308 bus1=node_oh4301305.1.2.3 bus2=node_oh4301308.1.2.3 switch=n length=423.837124966665 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301307 bus1=node_oh4301305.3 bus2=node_oh4301307.3 switch=n length=79.2044803025132 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301309 bus1=node_oh4301308.1.2.3 bus2=node_oh4301309.1.2.3 switch=n length=232.849124112613 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301310 bus1=node_oh4301309.1.2.3 bus2=node_oh4301310.1.2.3 switch=n length=265.753123405834 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301311 bus1=node_oh4301310.1.2.3 bus2=node_oh4301311.1.2.3 switch=n length=263.548368426081 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301312 bus1=node_oh4301311.1.2.3 bus2=node_oh4301312.1.2.3 switch=n length=365.45717259326597 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301313 bus1=node_oh4301312.1.2.3 bus2=node_oh4301313.1.2.3 switch=n length=322.559186817066 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301314 bus1=node_oh4301313.1.2.3 bus2=node_oh4301314.1.2.3 switch=n length=280.572209778515 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301319 bus1=node_oh4301314.1.2.3 bus2=node_oh4301319.1.2.3 switch=n length=287.877839542994 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301581 bus1=node_oh4301314.2 bus2=node_oh4301581.2 switch=n length=516.813559032736 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301317 bus1=node_xfmr4301316.1 bus2=node_oh4301317.1 switch=n length=120.45375046039301 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301315 bus1=node_xfmr4301316.1 bus2=node_oh4301315.1 switch=n length=87.2846401149086 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301318 bus1=node_oh4301317.1 bus2=node_oh4301318.1 switch=n length=12.240302283878501 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301328 bus1=node_oh4301319.3 bus2=node_oh4301328.3 switch=n length=502.49068339630895 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301321 bus1=node_oh4301319.1.2.3 bus2=node_oh4301321.1.2.3 switch=n length=70.5820409169658 units=ft geometry=#1/0-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301320 bus1=node_oh4301319.2 bus2=node_oh4301320.2 switch=n length=73.6776363626985 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301329 bus1=node_oh4301328.3 bus2=node_oh4301329.3 switch=n length=54.321093508920605 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301330 bus1=node_oh4301329.3 bus2=node_oh4301330.3 switch=n length=439.895738669923 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301331 bus1=node_oh4301329.3 bus2=node_oh4301331.3 switch=n length=235.687175722531 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4303144 bus1=node_oh4301330.3 bus2=node_oh4303144.3 switch=n length=331.7264609584 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4303145 bus1=node_oh4301330.3 bus2=node_oh4303145.3 switch=n length=365.604682956979 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301332 bus1=node_oh4301331.3 bus2=node_oh4301332.3 switch=n length=206.33849131948799 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301340 bus1=node_oh4301332.3 bus2=node_oh4301340.3 switch=n length=244.909334448294 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301334 bus1=node_oh4301332.3 bus2=node_oh4301334.3 switch=n length=648.0969757680909 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301343 bus1=node_oh4301340.3 bus2=node_oh4301343.3 switch=n length=151.193434050581 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301344 bus1=node_oh4301343.3 bus2=node_oh4301344.3 switch=n length=685.110730977346 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301361 bus1=node_oh4301343.3 bus2=node_oh4301361.3 switch=n length=294.092039504655 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301346 bus1=node_oh4301344.3 bus2=node_oh4301346.3 switch=n length=622.234945338098 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301350 bus1=node_oh4301346.3 bus2=node_oh4301350.3 switch=n length=296.712756887942 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301349 bus1=node_xfmr4301351.3 bus2=node_oh4301349.3 switch=n length=25.8000717051307 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301352 bus1=node_xfmr4301353.3 bus2=node_oh4301352.3 switch=n length=28.431763926895698 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301362 bus1=node_oh4301361.3 bus2=node_oh4301362.3 switch=n length=788.792237347837 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301367 bus1=node_oh4301361.3 bus2=node_oh4301367.3 switch=n length=284.39591593398603 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301364 bus1=node_xfmr4300177.3 bus2=node_oh4301364.3 switch=n length=72.83234995522209 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301365 bus1=node_xfmr4300177.3 bus2=node_oh4301365.3 switch=n length=146.549796656305 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301363 bus1=node_oh4301364.3 bus2=node_oh4301363.3 switch=n length=102.122035330332 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301366 bus1=node_oh4301365.3 bus2=node_oh4301366.3 switch=n length=170.161263805968 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301368 bus1=node_oh4301367.3 bus2=node_oh4301368.3 switch=n length=1126.0954646032599 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301375 bus1=node_oh4301367.3 bus2=node_oh4301375.3 switch=n length=367.88369751881106 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301373 bus1=node_oh4301367.3 bus2=node_oh4301373.3 switch=n length=531.922468974597 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301370 bus1=node_xfmr4301371.3 bus2=node_oh4301370.3 switch=n length=85.9469051215477 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301369 bus1=node_xfmr4301371.3 bus2=node_oh4301369.3 switch=n length=39.932549380023 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301383 bus1=node_oh4301375.3 bus2=node_oh4301383.3 switch=n length=300.080217608527 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301378 bus1=node_oh4301375.3 bus2=node_oh4301378.3 switch=n length=464.48990042844497 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301384 bus1=node_oh4301375.3 bus2=node_oh4301384.3 switch=n length=394.391939065543 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301377 bus1=node_xfmr4301376.3 bus2=node_oh4301377.3 switch=n length=72.5119307425173 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301391 bus1=node_oh4301383.3 bus2=node_oh4301391.3 switch=n length=376.78984302151497 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4303142 bus1=node_oh4301391.3 bus2=node_oh4303142.3 switch=n length=568.3775682376989 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301392 bus1=node_oh4301391.3 bus2=node_oh4301392.3 switch=n length=117.500611401166 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301396 bus1=node_oh4301391.3 bus2=node_oh4301396.3 switch=n length=234.817330021307 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4303143 bus1=node_oh4303142.3 bus2=node_oh4303143.3 switch=n length=360.033920624229 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301393 bus1=node_oh4301392.3 bus2=node_oh4301393.3 switch=n length=95.2017126944559 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4300179 bus1=node_oh4301393.3 bus2=node_oh4300179.3 switch=n length=161.855737521702 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301397 bus1=node_oh4301396.3 bus2=node_oh4301397.3 switch=n length=151.42860826155 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301402 bus1=node_oh4301397.3 bus2=node_oh4301402.3 switch=n length=382.381125318711 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301399 bus1=node_xfmr4301400.3 bus2=node_oh4301399.3 switch=n length=72.0312466920754 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301403 bus1=node_oh4301402.3 bus2=node_oh4301403.3 switch=n length=130.741969160729 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301406 bus1=node_oh4301402.3 bus2=node_oh4301406.3 switch=n length=500.53947746394203 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4300182 bus1=node_oh4301402.3 bus2=node_oh4300182.3 switch=n length=405.047056648928 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4300181 bus1=node_oh4301402.3 bus2=node_oh4300181.3 switch=n length=374.69592965497804 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4300183 bus1=node_oh4301403.3 bus2=node_oh4300183.3 switch=n length=379.330718239374 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301409 bus1=node_oh4301406.3 bus2=node_oh4301409.3 switch=n length=498.982515224919 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301407 bus1=node_oh4301406.3 bus2=node_oh4301407.3 switch=n length=138.409880066412 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301410 bus1=node_oh4301409.3 bus2=node_oh4301410.3 switch=n length=441.660478308764 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301411 bus1=node_oh4301410.3 bus2=node_oh4301411.3 switch=n length=452.50069668444803 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4300190 bus1=node_oh4301410.3 bus2=node_oh4300190.3 switch=n length=478.696791090085 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4300185 bus1=node_oh4301410.3 bus2=node_oh4300185.3 switch=n length=476.291887816705 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301413 bus1=node_oh4301411.3 bus2=node_oh4301413.3 switch=n length=163.243985494158 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301415 bus1=node_oh4301411.3 bus2=node_oh4301415.3 switch=n length=448.212103808106 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4300191 bus1=node_oh4301413.3 bus2=node_oh4300191.3 switch=n length=235.227168923961 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307334 bus1=node_oh4300191.3 bus2=node_oh4307334.3 switch=n length=463.445624102837 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307335 bus1=node_oh4307334.3 bus2=node_oh4307335.3 switch=n length=560.31678646993 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307337 bus1=node_xfmr4307338.3 bus2=node_oh4307337.3 switch=n length=150.913443403775 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307336 bus1=node_xfmr4307338.3 bus2=node_oh4307336.3 switch=n length=99.7370106830923 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301417 bus1=node_oh4301415.3 bus2=node_oh4301417.3 switch=n length=452.095451204768 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4300192 bus1=node_oh4301415.3 bus2=node_oh4300192.3 switch=n length=489.44235462425695 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301416 bus1=node_xfmr4301420.3 bus2=node_oh4301416.3 switch=n length=113.443402628957 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301421 bus1=node_oh4301417.3 bus2=node_oh4301421.3 switch=n length=213.61567568871 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301423 bus1=node_xfmr4301419.3 bus2=node_oh4301423.3 switch=n length=148.060296163346 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301418 bus1=node_xfmr4301419.3 bus2=node_oh4301418.3 switch=n length=70.68927499984329 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307357 bus1=node_oh4301421.3 bus2=node_oh4307357.3 switch=n length=393.204223400469 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301424 bus1=node_oh4301421.3 bus2=node_oh4301424.3 switch=n length=282.830958878391 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307356 bus1=node_oh4307357.3 bus2=node_oh4307356.3 switch=n length=143.501449818475 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307361 bus1=node_xfmr4307358.3 bus2=node_oh4307361.3 switch=n length=63.1992141478232 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307360 bus1=node_xfmr4307358.3 bus2=node_oh4307360.3 switch=n length=125.304501116272 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307355 bus1=node_oh4307356.3 bus2=node_oh4307355.3 switch=n length=273.267267340856 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301422 bus1=node_oh4307355.3 bus2=node_oh4301422.3 switch=n length=306.307541206621 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307363 bus1=node_xfmr4307362.3 bus2=node_oh4307363.3 switch=n length=61.22981299968821 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301425 bus1=node_oh4301424.3 bus2=node_oh4301425.3 switch=n length=196.426240609583 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301427 bus1=node_oh4301424.3 bus2=node_oh4301427.3 switch=n length=299.707806037694 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301435 bus1=node_oh4301424.3 bus2=node_oh4301435.3 switch=n length=308.691661856847 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301429 bus1=node_xfmr4301430.3 bus2=node_oh4301429.3 switch=n length=63.9416046093402 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301442 bus1=node_oh4301435.3 bus2=node_oh4301442.3 switch=n length=393.38085324530897 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301437 bus1=node_oh4301435.3 bus2=node_oh4301437.3 switch=n length=223.54031873457996 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301441 bus1=node_oh4301435.3 bus2=node_oh4301441.3 switch=n length=211.25876123862201 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301443 bus1=node_oh4301442.3 bus2=node_oh4301443.3 switch=n length=157.24750045724 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4300202 bus1=node_oh4301442.3 bus2=node_oh4300202.3 switch=n length=315.485628198756 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301446 bus1=node_oh4301443.3 bus2=node_oh4301446.3 switch=n length=200.75474041723203 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301444 bus1=node_oh4301443.3 bus2=node_oh4301444.3 switch=n length=50.6389356128432 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301447 bus1=node_oh4301446.3 bus2=node_oh4301447.3 switch=n length=81.1886944098634 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301453 bus1=node_oh4301447.3 bus2=node_oh4301453.3 switch=n length=339.373690347406 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301450 bus1=node_oh4301447.3 bus2=node_oh4301450.3 switch=n length=142.867170826871 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301457 bus1=node_oh4301453.3 bus2=node_oh4301457.3 switch=n length=195.992891962918 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301456 bus1=node_oh4301453.3 bus2=node_oh4301456.3 switch=n length=359.138632007038 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301462 bus1=node_oh4301457.3 bus2=node_oh4301462.3 switch=n length=150.97845044913 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301463 bus1=node_oh4301462.3 bus2=node_oh4301463.3 switch=n length=95.8407768123526 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301465 bus1=node_oh4301462.3 bus2=node_oh4301465.3 switch=n length=143.909981933108 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307423 bus1=node_oh4301463.3 bus2=node_oh4307423.3 switch=n length=268.017745121379 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307424 bus1=node_xfmr4307425.3 bus2=node_oh4307424.3 switch=n length=134.742977924891 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307426 bus1=node_oh4301465.3 bus2=node_oh4307426.3 switch=n length=332.506869252395 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301470 bus1=node_oh4301465.3 bus2=node_oh4301470.3 switch=n length=486.69281122695503 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307427 bus1=node_xfmr4307428.3 bus2=node_oh4307427.3 switch=n length=156.763433555126 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307439 bus1=node_oh4307435.3 bus2=node_oh4307439.3 switch=n length=327.023209268075 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307438 bus1=node_xfmr4307436.3 bus2=node_oh4307438.3 switch=n length=117.70588175603599 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307437 bus1=node_xfmr4307436.3 bus2=node_oh4307437.3 switch=n length=67.9860169447245 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307441 bus1=node_oh4307439.3 bus2=node_oh4307441.3 switch=n length=170.84546701629 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307444 bus1=node_oh4307441.3 bus2=node_oh4307444.3 switch=n length=283.207826339497 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307445 bus1=node_oh4307444.3 bus2=node_oh4307445.3 switch=n length=134.298015622053 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307449 bus1=node_oh4307445.3 bus2=node_oh4307449.3 switch=n length=323.07017828940496 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307446 bus1=node_oh4307445.3 bus2=node_oh4307446.3 switch=n length=376.15004027656306 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307452 bus1=node_oh4307449.3 bus2=node_oh4307452.3 switch=n length=441.567461323842 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307456 bus1=node_oh4307452.3 bus2=node_oh4307456.3 switch=n length=302.700579616273 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307453 bus1=node_oh4307452.3 bus2=node_oh4307453.3 switch=n length=77.79846849392409 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307457 bus1=node_oh4307456.3 bus2=node_oh4307457.3 switch=n length=299.136905111942 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307459 bus1=node_oh4307457.3 bus2=node_oh4307459.3 switch=n length=337.748525533691 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307460 bus1=node_oh4307459.3 bus2=node_oh4307460.3 switch=n length=444.782798228536 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307461 bus1=node_oh4307460.3 bus2=node_oh4307461.3 switch=n length=417.885530019766 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307462 bus1=node_oh4307461.3 bus2=node_oh4307462.3 switch=n length=376.906252137065 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307463 bus1=node_oh4307462.3 bus2=node_oh4307463.3 switch=n length=473.113118397662 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307464 bus1=node_oh4307463.3 bus2=node_oh4307464.3 switch=n length=187.055697854965 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4308080 bus1=node_oh4307463.3 bus2=node_oh4308080.3 switch=n length=316.599180651445 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307466 bus1=node_oh4307464.3 bus2=node_oh4307466.3 switch=n length=310.772560082098 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307473 bus1=node_oh4307470.3 bus2=node_oh4307473.3 switch=n length=188.92645182693002 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307474 bus1=node_oh4307473.3 bus2=node_oh4307474.3 switch=n length=419.95086915032897 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307477 bus1=node_oh4307474.3 bus2=node_oh4307477.3 switch=n length=497.608526655253 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307475 bus1=node_oh4307474.3 bus2=node_oh4307475.3 switch=n length=559.026273622118 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301475 bus1=node_oh4307477.3 bus2=node_oh4301475.3 switch=n length=433.559917427678 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301478 bus1=node_oh4301475.3 bus2=node_oh4301478.3 switch=n length=822.4478198647749 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301477 bus1=node_xfmr4301476.3 bus2=node_oh4301477.3 switch=n length=115.719772294885 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301479 bus1=node_oh4301478.3 bus2=node_oh4301479.3 switch=n length=78.15896749554621 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301482 bus1=node_oh4301479.3 bus2=node_oh4301482.3 switch=n length=358.41814825700203 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301485 bus1=node_oh4301482.3 bus2=node_oh4301485.3 switch=n length=522.845048269754 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301483 bus1=node_xfmr4301484.3 bus2=node_oh4301483.3 switch=n length=106.61716606626499 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301488 bus1=node_oh4301485.3 bus2=node_oh4301488.3 switch=n length=721.023694825659 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301492 bus1=node_oh4301488.3 bus2=node_oh4301492.3 switch=n length=316.325620365968 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307478 bus1=node_oh4301492.3 bus2=node_oh4307478.3 switch=n length=303.544672165379 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307479 bus1=node_oh4307478.3 bus2=node_oh4307479.3 switch=n length=112.358302319109 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301489 bus1=node_xfmr4301491.3 bus2=node_oh4301489.3 switch=n length=99.34198759845872 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301490 bus1=node_oh4301489.3 bus2=node_oh4301490.3 switch=n length=10.2195205365994 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301487 bus1=node_xfmr4300216.3 bus2=node_oh4301487.3 switch=n length=59.340281428353904 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301486 bus1=node_xfmr4300216.3 bus2=node_oh4301486.3 switch=n length=175.411427506932 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301480 bus1=node_xfmr4301481.3 bus2=node_oh4301480.3 switch=n length=172.74808537305802 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307472 bus1=node_xfmr4307471.3 bus2=node_oh4307472.3 switch=n length=50.2159058467504 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh_3_32_25_3_0001 bus1=node_oh4307467.3 bus2=node_oh_3_32_25_3_0001.3 switch=n length=536.985712032976 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307454 bus1=node_oh4307453.3 bus2=node_oh4307454.3 switch=n length=516.059852730259 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307448 bus1=node_oh4307446.3 bus2=node_oh4307448.3 switch=n length=371.73660688715796 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh21000109 bus1=node_oh4307448.3 bus2=node_oh21000109.3 switch=n length=532.344085930157 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh21000110 bus1=node_oh21000109.3 bus2=node_oh21000110.3 switch=n length=205.08639946374902 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh21000111 bus1=node_oh21000110.3 bus2=node_oh21000111.3 switch=n length=383.27958023099603 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh21000112 bus1=node_oh21000111.3 bus2=node_oh21000112.3 switch=n length=536.349786919008 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307443 bus1=node_xfmr4307442.3 bus2=node_oh4307443.3 switch=n length=130.526715273094 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301471 bus1=node_xfmr4301474.3 bus2=node_oh4301471.3 switch=n length=87.8560692270417 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301472 bus1=node_oh4301471.3 bus2=node_oh4301472.3 switch=n length=68.65331018963259 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307430 bus1=node_oh4307429.3 bus2=node_oh4307430.3 switch=n length=330.734938130276 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307432 bus1=node_oh4307430.3 bus2=node_oh4307432.3 switch=n length=330.742855554046 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307433 bus1=node_oh4307432.3 bus2=node_oh4307433.3 switch=n length=387.542043654533 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301466 bus1=node_xfmr4301467.3 bus2=node_oh4301466.3 switch=n length=37.566709997029 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301468 bus1=node_xfmr4301467.3 bus2=node_oh4301468.3 switch=n length=164.449577074531 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301469 bus1=node_oh4301468.3 bus2=node_oh4301469.3 switch=n length=111.56244619047101 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301458 bus1=node_xfmr4301461.3 bus2=node_oh4301458.3 switch=n length=58.396904883782604 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4303906 bus1=node_oh4301458.3 bus2=node_oh4303906.3 switch=n length=84.93661460150871 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301454 bus1=node_xfmr4301455.3 bus2=node_oh4301454.3 switch=n length=81.0848691188152 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307418 bus1=node_oh4301456.3 bus2=node_oh4307418.3 switch=n length=330.976771390432 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307416 bus1=node_xfmr4307417.3 bus2=node_oh4307416.3 switch=n length=140.18973036548098 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307415 bus1=node_xfmr4307417.3 bus2=node_oh4307415.3 switch=n length=39.521150033842396 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307421 bus1=node_oh4307416.3 bus2=node_oh4307421.3 switch=n length=94.53565041839941 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307422 bus1=node_oh4307421.3 bus2=node_oh4307422.3 switch=n length=116.11164842507601 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307419 bus1=node_xfmr4307420.3 bus2=node_oh4307419.3 switch=n length=104.730380024098 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301449 bus1=node_xfmr4301448.3 bus2=node_oh4301449.3 switch=n length=72.04746711087259 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307412 bus1=node_oh4301450.3 bus2=node_oh4307412.3 switch=n length=307.88036588899297 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307413 bus1=node_oh4307412.3 bus2=node_oh4307413.3 switch=n length=351.96759580964203 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301451 bus1=node_oh4307413.3 bus2=node_oh4301451.3 switch=n length=344.823946094188 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301445 bus1=node_oh4301444.3 bus2=node_oh4301445.3 switch=n length=159.116524911709 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301452 bus1=node_oh4301445.3 bus2=node_oh4301452.3 switch=n length=275.48988547678397 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307402 bus1=node_xfmr4307403.3 bus2=node_oh4307402.3 switch=n length=17.2309706609573 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307398 bus1=node_oh4301452.3 bus2=node_oh4307398.3 switch=n length=186.96484803303102 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307399 bus1=node_oh4307398.3 bus2=node_oh4307399.3 switch=n length=250.610001795675 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307404 bus1=node_xfmr4307405.3 bus2=node_oh4307404.3 switch=n length=124.15628940962699 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307400 bus1=node_oh4307399.3 bus2=node_oh4307400.3 switch=n length=270.68480009041303 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307401 bus1=node_oh4307400.3 bus2=node_oh4307401.3 switch=n length=277.881848453395 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307411 bus1=node_xfmr4307410.3 bus2=node_oh4307411.3 switch=n length=28.1004819440178 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307406 bus1=node_xfmr4307408.3 bus2=node_oh4307406.3 switch=n length=123.044062432941 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307409 bus1=node_xfmr4307408.3 bus2=node_oh4307409.3 switch=n length=128.86771201494 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307407 bus1=node_oh4307406.3 bus2=node_oh4307407.3 switch=n length=79.06292430721709 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307395 bus1=node_oh4300202.3 bus2=node_oh4307395.3 switch=n length=396.96011336162104 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307393 bus1=node_xfmr4307394.3 bus2=node_oh4307393.3 switch=n length=9.868789186028991 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307396 bus1=node_xfmr4307397.3 bus2=node_oh4307396.3 switch=n length=125.25360274278201 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307382 bus1=node_oh4301437.3 bus2=node_oh4307382.3 switch=n length=220.30592297992902 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307383 bus1=node_oh4307382.3 bus2=node_oh4307383.3 switch=n length=518.020466645251 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307385 bus1=node_oh4307383.3 bus2=node_oh4307385.3 switch=n length=112.264269791089 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307390 bus1=node_oh4307383.3 bus2=node_oh4307390.3 switch=n length=344.988505217435 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307388 bus1=node_xfmr4307384.3 bus2=node_oh4307388.3 switch=n length=93.9217470067299 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307386 bus1=node_xfmr4307389.3 bus2=node_oh4307386.3 switch=n length=108.062682272988 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307387 bus1=node_oh4307386.3 bus2=node_oh4307387.3 switch=n length=113.089665752351 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301440 bus1=node_oh4307390.3 bus2=node_oh4301440.3 switch=n length=290.342911916104 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307391 bus1=node_xfmr4307392.3 bus2=node_oh4307391.3 switch=n length=144.894476430298 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4303146 bus1=node_oh4301440.3 bus2=node_oh4303146.3 switch=n length=346.500523664816 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4303150 bus1=node_oh4303149.3 bus2=node_oh4303150.3 switch=n length=313.951696444072 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4303151 bus1=node_oh4303150.3 bus2=node_oh4303151.3 switch=n length=264.76632433136797 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4303152 bus1=node_oh4303151.3 bus2=node_oh4303152.3 switch=n length=406.363547823827 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4303153 bus1=node_oh4303152.3 bus2=node_oh4303153.3 switch=n length=258.807475162647 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301438 bus1=node_xfmr4301439.3 bus2=node_oh4301438.3 switch=n length=79.15837605703159 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307367 bus1=node_oh4301441.3 bus2=node_oh4307367.3 switch=n length=276.14360213475896 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307371 bus1=node_oh4307367.3 bus2=node_oh4307371.3 switch=n length=257.77642444561 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307369 bus1=node_xfmr4307370.3 bus2=node_oh4307369.3 switch=n length=79.0810324919482 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307375 bus1=node_oh4307371.3 bus2=node_oh4307375.3 switch=n length=305.274374293143 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307372 bus1=node_xfmr4307374.3 bus2=node_oh4307372.3 switch=n length=142.85123905655502 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307373 bus1=node_xfmr4307374.3 bus2=node_oh4307373.3 switch=n length=132.522207195564 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307376 bus1=node_oh4307375.3 bus2=node_oh4307376.3 switch=n length=260.550043177889 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307379 bus1=node_oh4307376.3 bus2=node_oh4307379.3 switch=n length=258.681246517866 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307378 bus1=node_xfmr4307377.3 bus2=node_oh4307378.3 switch=n length=31.933707896013104 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307381 bus1=node_xfmr4307380.3 bus2=node_oh4307381.3 switch=n length=54.123828393816794 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307365 bus1=node_xfmr4307368.3 bus2=node_oh4307365.3 switch=n length=85.1194061303788 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307366 bus1=node_oh4307365.3 bus2=node_oh4307366.3 switch=n length=81.72975284435579 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301432 bus1=node_xfmr4301428.3 bus2=node_oh4301432.3 switch=n length=148.290937012364 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301431 bus1=node_xfmr4301428.3 bus2=node_oh4301431.3 switch=n length=98.8513677195133 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4300194 bus1=node_oh4301432.3 bus2=node_oh4300194.3 switch=n length=86.54385362343729 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307342 bus1=node_oh4300192.3 bus2=node_oh4307342.3 switch=n length=450.074043686057 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307340 bus1=node_xfmr4307339.3 bus2=node_oh4307340.3 switch=n length=158.37652509136998 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307341 bus1=node_oh4307340.3 bus2=node_oh4307341.3 switch=n length=21.4047401293225 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307348 bus1=node_oh4307342.3 bus2=node_oh4307348.3 switch=n length=289.821089122273 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307350 bus1=node_xfmr4307351.3 bus2=node_oh4307350.3 switch=n length=78.1410481116473 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307349 bus1=node_xfmr4307351.3 bus2=node_oh4307349.3 switch=n length=86.36319412805089 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307344 bus1=node_xfmr4307347.3 bus2=node_oh4307344.3 switch=n length=169.513228097459 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307345 bus1=node_oh4307344.3 bus2=node_oh4307345.3 switch=n length=32.5974477527931 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307329 bus1=node_oh4300190.3 bus2=node_oh4307329.3 switch=n length=304.528357464336 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307331 bus1=node_xfmr4307333.3 bus2=node_oh4307331.3 switch=n length=89.4196136201737 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307332 bus1=node_xfmr4307333.3 bus2=node_oh4307332.3 switch=n length=121.61119890875601 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307327 bus1=node_xfmr4307326.3 bus2=node_oh4307327.3 switch=n length=22.3867572463157 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307322 bus1=node_xfmr4307321.3 bus2=node_oh4307322.3 switch=n length=94.7250853785618 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307324 bus1=node_xfmr4307321.3 bus2=node_oh4307324.3 switch=n length=148.36091297910698 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307323 bus1=node_oh4307322.3 bus2=node_oh4307323.3 switch=n length=23.334620202586603 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307325 bus1=node_oh4307324.3 bus2=node_oh4307325.3 switch=n length=53.828417216073 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301389 bus1=node_xfmr4301385.3 bus2=node_oh4301389.3 switch=n length=72.2328934765516 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301379 bus1=node_oh4301378.3 bus2=node_oh4301379.3 switch=n length=485.655866020357 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301382 bus1=node_xfmr4301380.3 bus2=node_oh4301382.3 switch=n length=59.47231290984529 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301386 bus1=node_xfmr4300178.3 bus2=node_oh4301386.3 switch=n length=151.014778084854 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301388 bus1=node_oh4301386.3 bus2=node_oh4301388.3 switch=n length=91.33261629878592 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301387 bus1=node_oh4301386.3 bus2=node_oh4301387.3 switch=n length=73.2365291367667 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301342 bus1=node_xfmr4301345.3 bus2=node_oh4301342.3 switch=n length=120.73325059814199 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301341 bus1=node_xfmr4301345.3 bus2=node_oh4301341.3 switch=n length=16.3915862563803 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301335 bus1=node_xfmr4301338.3 bus2=node_oh4301335.3 switch=n length=98.41744255983579 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301336 bus1=node_xfmr4301333.3 bus2=node_oh4301336.3 switch=n length=106.17602365871599 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301322 bus1=node_oh4301321.3 bus2=node_oh4301322.3 switch=n length=421.39800486001195 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301494 bus1=node_oh4301322.3 bus2=node_oh4301494.3 switch=n length=166.616640525507 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301496 bus1=node_xfmr4300175.3 bus2=node_oh4301496.3 switch=n length=107.39158719369301 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301495 bus1=node_xfmr4300175.3 bus2=node_oh4301495.3 switch=n length=107.005178379331 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301497 bus1=node_oh4301496.3 bus2=node_oh4301497.3 switch=n length=78.79128885856579 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301498 bus1=node_oh4301496.3 bus2=node_oh4301498.3 switch=n length=82.4356391373796 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301325 bus1=node_xfmr4301324.2 bus2=node_oh4301325.2 switch=n length=55.830301808222195 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301326 bus1=node_oh4301325.2 bus2=node_oh4301326.2 switch=n length=91.1158218972903 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301327 bus1=node_oh4301326.2 bus2=node_oh4301327.2 switch=n length=136.649370287636 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh_3_32_80_4_0001 bus1=node_t_3120.2 bus2=node_oh_3_32_80_4_0001.2 switch=n length=174.293151199254 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301355 bus1=node_oh4303903.2 bus2=node_oh4301355.2 switch=n length=115.580528204428 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4300170 bus1=node_oh4303903.2 bus2=node_oh4300170.2 switch=n length=328.352521842081 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301356 bus1=node_oh4301355.2 bus2=node_oh4301356.2 switch=n length=423.15238259984 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301357 bus1=node_oh4301356.2 bus2=node_oh4301357.2 switch=n length=294.908057536488 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301358 bus1=node_oh4301357.2 bus2=node_oh4301358.2 switch=n length=420.90009313389 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301359 bus1=node_xfmr4301360.2 bus2=node_oh4301359.2 switch=n length=193.33773170292199 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301300 bus1=node_xfmr4300154.3 bus2=node_oh4301300.3 switch=n length=4.828436599953401 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301278 bus1=node_oh4301277.1 bus2=node_oh4301278.1 switch=n length=263.508078813423 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301288 bus1=node_oh4301278.1 bus2=node_oh4301288.1 switch=n length=1.0 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301279 bus1=node_oh4301278.1 bus2=node_oh4301279.1 switch=n length=407.39669574035696 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301291 bus1=node_xfmr4301293.1 bus2=node_oh4301291.1 switch=n length=118.30009836526399 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301289 bus1=node_xfmr4301293.1 bus2=node_oh4301289.1 switch=n length=8.12227184972992 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301292 bus1=node_oh4301291.1 bus2=node_oh4301292.1 switch=n length=43.936557362387894 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301281 bus1=node_oh4301279.1 bus2=node_oh4301281.1 switch=n length=405.28769287989195 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301282 bus1=node_xfmr4301283.1 bus2=node_oh4301282.1 switch=n length=68.4132808743188 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301267 bus1=node_xfmr4301268.3 bus2=node_oh4301267.3 switch=n length=124.779484291218 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301266 bus1=node_xfmr4301252.3 bus2=node_oh4301266.3 switch=n length=127.20230383126601 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301254 bus1=node_oh4301253.1 bus2=node_oh4301254.1 switch=n length=188.005627575465 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301255 bus1=node_oh4301254.1 bus2=node_oh4301255.1 switch=n length=228.225509967615 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301262 bus1=node_oh4301255.1 bus2=node_oh4301262.1 switch=n length=329.321810544013 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301259 bus1=node_xfmr4301260.1 bus2=node_oh4301259.1 switch=n length=81.37176045781379 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301263 bus1=node_xfmr4301264.1 bus2=node_oh4301263.1 switch=n length=45.4642892828882 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301257 bus1=node_xfmr4301258.1 bus2=node_oh4301257.1 switch=n length=146.972736587428 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301256 bus1=node_xfmr4301258.1 bus2=node_oh4301256.1 switch=n length=118.06890234086399 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301243 bus1=node_xfmr4301229.1 bus2=node_oh4301243.1 switch=n length=129.524830438037 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301235 bus1=node_xfmr4301229.1 bus2=node_oh4301235.1 switch=n length=164.409185266467 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301237 bus1=node_xfmr4301229.1 bus2=node_oh4301237.1 switch=n length=170.775740958665 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301180 bus1=node_xfmr4301188.3 bus2=node_oh4301180.3 switch=n length=12.418264774119802 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301181 bus1=node_xfmr4301188.3 bus2=node_oh4301181.3 switch=n length=94.37790472349042 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301182 bus1=node_oh4301181.3 bus2=node_oh4301182.3 switch=n length=82.2182710836907 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301183 bus1=node_oh4301181.3 bus2=node_oh4301183.3 switch=n length=132.36749034409598 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301149 bus1=node_oh4301143.2 bus2=node_oh4301149.2 switch=n length=273.090263466181 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301154 bus1=node_xfmr4301520.2 bus2=node_oh4301154.2 switch=n length=113.645021448347 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4300147 bus1=node_oh4301149.2 bus2=node_oh4300147.2 switch=n length=525.282300196696 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301184 bus1=node_xfmr4301151.2 bus2=node_oh4301184.2 switch=n length=221.703048693401 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301174 bus1=node_xfmr4301164.3 bus2=node_oh4301174.3 switch=n length=139.999558928001 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301153 bus1=node_xfmr4301164.3 bus2=node_oh4301153.3 switch=n length=154.908592402049 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301162 bus1=node_xfmr4301164.3 bus2=node_oh4301162.3 switch=n length=67.6954629204402 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301119 bus1=node_xfmr4301120.3 bus2=node_oh4301119.3 switch=n length=82.57760592307649 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307821 bus1=node_oh4301535.1 bus2=node_oh4307821.1 switch=n length=404.748811116156 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301536 bus1=node_oh4301535.1.2.3 bus2=node_oh4301536.1.2.3 switch=n length=466.1017506941299 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4307822 bus1=node_oh4307821.1 bus2=node_oh4307822.1 switch=n length=308.979433943509 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307825 bus1=node_xfmr4307824.1 bus2=node_oh4307825.1 switch=n length=62.2621618641764 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307826 bus1=node_oh4307825.1 bus2=node_oh4307826.1 switch=n length=83.5204795244823 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4307827 bus1=node_xfmr4307823.1 bus2=node_oh4307827.1 switch=n length=240.560846772784 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301537 bus1=node_oh4301536.1.2.3 bus2=node_oh4301537.1.2.3 switch=n length=504.80156071463404 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301538 bus1=node_oh4301537.1.2.3 bus2=node_oh4301538.1.2.3 switch=n length=186.10741226502302 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301550 bus1=node_oh4301538.1.2.3 bus2=node_oh4301550.1.2.3 switch=n length=311.137896759657 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301539 bus1=node_oh4301538.3 bus2=node_oh4301539.3 switch=n length=121.954389015119 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301551 bus1=node_oh4301550.1.2.3 bus2=node_oh4301551.1.2.3 switch=n length=500.819820394562 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301818 bus1=node_oh4301551.1.2.3 bus2=node_oh4301818.1.2.3 switch=n length=604.2779255441841 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301819 bus1=node_oh4301818.1.2.3 bus2=node_oh4301819.1.2.3 switch=n length=303.58722387479304 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301820 bus1=node_oh4301819.1.2.3 bus2=node_oh4301820.1.2.3 switch=n length=231.46356711152802 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301821 bus1=node_oh4301820.1.2.3 bus2=node_oh4301821.1.2.3 switch=n length=275.718483965132 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301824 bus1=node_oh4301821.1.2.3 bus2=node_oh4301824.1.2.3 switch=n length=500.577834307477 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301822 bus1=node_xfmr4301823.1 bus2=node_oh4301822.1 switch=n length=91.77568523291642 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301826 bus1=node_oh4301824.1.2.3 bus2=node_oh4301826.1.2.3 switch=n length=293.935405318879 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301825 bus1=node_oh4301824.3 bus2=node_oh4301825.3 switch=n length=250.448711316097 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301847 bus1=node_oh4301826.1.2.3 bus2=node_oh4301847.1.2.3 switch=n length=233.27608042836601 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301853 bus1=node_oh4301847.1.2.3 bus2=node_oh4301853.1.2.3 switch=n length=443.04149351227096 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301857 bus1=node_oh4301853.1.2.3 bus2=node_oh4301857.1.2.3 switch=n length=483.387318237081 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301855 bus1=node_oh4301853.3 bus2=node_oh4301855.3 switch=n length=377.579781463852 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301862 bus1=node_oh4301857.1.2.3 bus2=node_oh4301862.1.2.3 switch=n length=501.21260329342994 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301860 bus1=node_xfmr4301858.3 bus2=node_oh4301860.3 switch=n length=122.776193539244 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301859 bus1=node_xfmr4301858.3 bus2=node_oh4301859.3 switch=n length=50.644341243694 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301861 bus1=node_oh4301860.3 bus2=node_oh4301861.3 switch=n length=54.3442112831497 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301863 bus1=node_oh4301862.1.2.3 bus2=node_oh4301863.1.2.3 switch=n length=503.91462937675794 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301867 bus1=node_oh4301863.1.2.3 bus2=node_oh4301867.1.2.3 switch=n length=443.352744550074 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301865 bus1=node_oh4301863.3 bus2=node_oh4301865.3 switch=n length=65.78381031827091 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301877 bus1=node_oh4301863.1.2.3 bus2=node_oh4301877.1.2.3 switch=n length=280.302472340133 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301868 bus1=node_oh4301867.1.2.3 bus2=node_oh4301868.1.2.3 switch=n length=47.090865577231 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301870 bus1=node_oh4301868.1.2.3 bus2=node_oh4301870.1.2.3 switch=n length=404.75052093850303 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301878 bus1=node_oh4301868.1 bus2=node_oh4301878.1 switch=n length=298.381743409466 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301884 bus1=node_oh4301870.1.2.3 bus2=node_oh4301884.1.2.3 switch=n length=224.814419688841 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301883 bus1=node_xfmr4301882.3 bus2=node_oh4301883.3 switch=n length=14.6410177239909 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301908 bus1=node_oh4301886.1.2.3 bus2=node_oh4301908.1.2.3 switch=n length=423.842109399344 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301887 bus1=node_oh4301886.1.2.3 bus2=node_oh4301887.1.2.3 switch=n length=316.783466897942 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301909 bus1=node_oh4301908.1.2.3 bus2=node_oh4301909.1.2.3 switch=n length=448.308652716045 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301910 bus1=node_oh4301909.1.2.3 bus2=node_oh4301910.1.2.3 switch=n length=159.24602130030001 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301915 bus1=node_oh4301910.1.2.3 bus2=node_oh4301915.1.2.3 switch=n length=406.786643340438 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301912 bus1=node_oh4301910.3 bus2=node_oh4301912.3 switch=n length=375.201355274702 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301565 bus1=node_oh4301910.3 bus2=node_oh4301565.3 switch=n length=288.973584432951 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301914 bus1=node_xfmr4302606.1 bus2=node_oh4301914.1 switch=n length=198.790429126282 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302616 bus1=node_oh4301926.1.2.3 bus2=node_oh4302616.1.2.3 switch=n length=279.30471621508497 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301927 bus1=node_oh4301926.1.2.3 bus2=node_oh4301927.1.2.3 switch=n length=172.09069992295701 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301917 bus1=node_oh4301926.3 bus2=node_oh4301917.3 switch=n length=67.1874393024024 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302618 bus1=node_oh4302616.1.2.3 bus2=node_oh4302618.1.2.3 switch=n length=16.5238671868053 units=ft geometry=none:none:3 enabled=true phases=3 
+new line.oh4302609 bus1=node_oh4302616.1.2.3 bus2=node_oh4302609.1.2.3 switch=n length=210.014274991019 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4302620 bus1=node_oh4302610.1.2.3 bus2=node_oh4302620.1.2.3 switch=n length=417.098900741843 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301965 bus1=node_xfmr4301977.3 bus2=node_oh4301965.3 switch=n length=51.5488894157018 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302612 bus1=node_oh4302620.2.3 bus2=node_oh4302612.2.3 switch=n length=137.732693649805 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:2 enabled=true phases=2 
+new line.oh4302621 bus1=node_xfmr4301955.3 bus2=node_oh4302621.3 switch=n length=80.77631645459479 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301957 bus1=node_oh4302621.3 bus2=node_oh4301957.3 switch=n length=185.459758438247 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301959 bus1=node_oh4302621.3 bus2=node_oh4301959.3 switch=n length=95.57705268533459 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301958 bus1=node_oh4301957.3 bus2=node_oh4301958.3 switch=n length=198.279684536725 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301575 bus1=node_oh4301574.3 bus2=node_oh4301575.3 switch=n length=390.879665498269 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301978 bus1=node_oh4301575.3 bus2=node_oh4301978.3 switch=n length=162.44535111835 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301982 bus1=node_oh4301978.3 bus2=node_oh4301982.3 switch=n length=305.06868636437997 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301979 bus1=node_oh4301978.3 bus2=node_oh4301979.3 switch=n length=106.256160762413 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302007 bus1=node_oh4301982.3 bus2=node_oh4302007.3 switch=n length=273.639077801255 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301984 bus1=node_xfmr4301983.3 bus2=node_oh4301984.3 switch=n length=49.659106919120504 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301985 bus1=node_oh4301984.3 bus2=node_oh4301985.3 switch=n length=118.29332102866002 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301986 bus1=node_oh4301984.3 bus2=node_oh4301986.3 switch=n length=118.240019029067 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302012 bus1=node_oh4302007.3 bus2=node_oh4302012.3 switch=n length=303.00356961599 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302014 bus1=node_oh4302012.3 bus2=node_oh4302014.3 switch=n length=142.31514395868402 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302015 bus1=node_oh4302014.3 bus2=node_oh4302015.3 switch=n length=121.19950164910401 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302016 bus1=node_xfmr4302018.3 bus2=node_oh4302016.3 switch=n length=27.0977489841085 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302013 bus1=node_xfmr4302018.3 bus2=node_oh4302013.3 switch=n length=101.803159577821 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302017 bus1=node_oh4302015.3 bus2=node_oh4302017.3 switch=n length=458.446884273404 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302024 bus1=node_oh4302015.3 bus2=node_oh4302024.3 switch=n length=391.04446013201004 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302019 bus1=node_oh4302017.3 bus2=node_oh4302019.3 switch=n length=413.627939095092 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302020 bus1=node_oh4302019.3 bus2=node_oh4302020.3 switch=n length=425.66415540885595 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302022 bus1=node_oh4302020.3 bus2=node_oh4302022.3 switch=n length=393.354748922824 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302023 bus1=node_oh4302020.3 bus2=node_oh4302023.3 switch=n length=410.6538022471 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302021 bus1=node_oh4302020.3 bus2=node_oh4302021.3 switch=n length=503.432917179767 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301552 bus1=node_oh4302023.3 bus2=node_oh4301552.3 switch=n length=388.40906850894 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301554 bus1=node_xfmr4301553.3 bus2=node_oh4301554.3 switch=n length=178.27827265255002 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302025 bus1=node_oh4302024.3 bus2=node_oh4302025.3 switch=n length=311.862146628743 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301576 bus1=node_oh4302024.3 bus2=node_oh4301576.3 switch=n length=374.99956333322604 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302026 bus1=node_xfmr4303015.3 bus2=node_oh4302026.3 switch=n length=51.814578064292 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302029 bus1=node_oh4302025.3 bus2=node_oh4302029.3 switch=n length=192.34059425926498 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302027 bus1=node_xfmr4302028.3 bus2=node_oh4302027.3 switch=n length=127.33976794378401 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302034 bus1=node_oh4302029.3 bus2=node_oh4302034.3 switch=n length=100.58477071611401 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302040 bus1=node_oh4302034.3 bus2=node_oh4302040.3 switch=n length=67.1180601626874 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302035 bus1=node_oh4302034.3 bus2=node_oh4302035.3 switch=n length=136.96061660212098 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302036 bus1=node_oh4302035.3 bus2=node_oh4302036.3 switch=n length=425.480629993966 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302037 bus1=node_xfmr4302045.3 bus2=node_oh4302037.3 switch=n length=100.161677801377 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302038 bus1=node_oh4302037.3 bus2=node_oh4302038.3 switch=n length=33.1775978638258 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302039 bus1=node_oh4302037.3 bus2=node_oh4302039.3 switch=n length=42.8931416428188 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302032 bus1=node_xfmr4300053.3 bus2=node_oh4302032.3 switch=n length=37.482018355439 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302030 bus1=node_xfmr4300053.3 bus2=node_oh4302030.3 switch=n length=30.785751574498402 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302044 bus1=node_oh4302032.3 bus2=node_oh4302044.3 switch=n length=302.56294502137 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302042 bus1=node_oh4302032.3 bus2=node_oh4302042.3 switch=n length=166.688038263308 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302033 bus1=node_oh4302032.3 bus2=node_oh4302033.3 switch=n length=129.53631807348302 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302043 bus1=node_oh4302042.3 bus2=node_oh4302043.3 switch=n length=117.30788379287901 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302031 bus1=node_oh4302030.3 bus2=node_oh4302031.3 switch=n length=137.11558080671998 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301577 bus1=node_oh4301576.3 bus2=node_oh4301577.3 switch=n length=168.052015756942 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302008 bus1=node_xfmr4302009.3 bus2=node_oh4302008.3 switch=n length=91.32592184047189 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302011 bus1=node_oh4302008.3 bus2=node_oh4302011.3 switch=n length=104.52626177186501 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301980 bus1=node_oh4301979.3 bus2=node_oh4301980.3 switch=n length=304.394575017453 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301981 bus1=node_oh4301980.3 bus2=node_oh4301981.3 switch=n length=290.744118599109 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302608 bus1=node_oh4300203.2 bus2=node_oh4302608.2 switch=n length=309.176925723846 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301568 bus1=node_oh4300203.2 bus2=node_oh4301568.2 switch=n length=130.29423509880502 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301567 bus1=node_oh4300203.2 bus2=node_oh4301567.2 switch=n length=269.914428847376 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301948 bus1=node_oh4302608.2 bus2=node_oh4301948.2 switch=n length=1.0 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301944 bus1=node_oh4302608.2 bus2=node_oh4301944.2 switch=n length=362.73876936455804 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301987 bus1=node_oh4301948.2 bus2=node_oh4301987.2 switch=n length=542.1089489205909 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301991 bus1=node_oh4301987.2 bus2=node_oh4301991.2 switch=n length=399.40129506569804 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301988 bus1=node_xfmr4301993.2 bus2=node_oh4301988.2 switch=n length=35.8420005023283 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301989 bus1=node_xfmr4301993.2 bus2=node_oh4301989.2 switch=n length=164.364347715699 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301990 bus1=node_oh4301989.2 bus2=node_oh4301990.2 switch=n length=74.35859398896541 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301997 bus1=node_oh4301991.2 bus2=node_oh4301997.2 switch=n length=128.391543724538 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301998 bus1=node_oh4301997.2 bus2=node_oh4301998.2 switch=n length=193.799015735363 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302003 bus1=node_oh4301997.2 bus2=node_oh4302003.2 switch=n length=262.050090822293 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302001 bus1=node_oh4301998.2 bus2=node_oh4302001.2 switch=n length=427.257068285634 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301996 bus1=node_xfmr4301999.2 bus2=node_oh4301996.2 switch=n length=111.35077907212 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302000 bus1=node_xfmr4301999.2 bus2=node_oh4302000.2 switch=n length=17.636331818331698 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302004 bus1=node_xfmr4308023.2 bus2=node_oh4302004.2 switch=n length=59.654827968807204 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302005 bus1=node_xfmr4308023.2 bus2=node_oh4302005.2 switch=n length=47.854104317221 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4302006 bus1=node_xfmr4308023.2 bus2=node_oh4302006.2 switch=n length=128.51590173988998 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301992 bus1=node_xfmr4301994.2 bus2=node_oh4301992.2 switch=n length=103.74471841999599 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301995 bus1=node_xfmr4301994.2 bus2=node_oh4301995.2 switch=n length=98.4289413739513 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4302614 bus1=node_oh4301944.2 bus2=node_oh4302614.2 switch=n length=241.170762946044 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301943 bus1=node_xfmr4301942.2 bus2=node_oh4301943.2 switch=n length=6.961759834932231 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301945 bus1=node_xfmr4301947.2 bus2=node_oh4301945.2 switch=n length=110.40689878807699 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301946 bus1=node_oh4301945.2 bus2=node_oh4301946.2 switch=n length=216.244856817621 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301951 bus1=node_xfmr4300058.2 bus2=node_oh4301951.2 switch=n length=89.7905351359107 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301569 bus1=node_xfmr4300059.2 bus2=node_oh4301569.2 switch=n length=168.021608134258 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.oh4301570 bus1=node_xfmr4300059.2 bus2=node_oh4301570.2 switch=n length=126.560483959334 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.oh4301573 bus1=node_oh4301569.2 bus2=node_oh4301573.2 switch=n length=125.645037307442 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.oh4300121 bus1=node_oh4301570.2 bus2=node_oh4300121.2 switch=n length=157.311637522435 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.oh4301571 bus1=node_oh4301570.2 bus2=node_oh4301571.2 switch=n length=198.428329630499 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.oh4300153 bus1=node_oh4301571.2 bus2=node_oh4300153.2 switch=n length=216.20564400586997 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.oh4300171 bus1=node_oh4300153.2 bus2=node_oh4300171.2 switch=n length=140.96424582133102 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.oh4300172 bus1=node_oh4300153.2 bus2=node_oh4300172.2 switch=n length=199.02970431563702 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.ug4303901 bus1=node_oh4300153.2 bus2=node_ug4303901.2 switch=n length=51.59192103450089 units=ft geometry=none:none:1 enabled=true phases=1 
+new line.oh4300175 bus1=node_oh4300172.2 bus2=node_oh4300175.2 switch=n length=135.668382831026 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.oh4301968 bus1=node_xfmr4301964.3 bus2=node_oh4301968.3 switch=n length=20.9257855288381 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301969 bus1=node_oh4301968.3 bus2=node_oh4301969.3 switch=n length=81.8317328425651 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301970 bus1=node_oh4301969.3 bus2=node_oh4301970.3 switch=n length=123.35685023549802 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301971 bus1=node_oh4301970.3 bus2=node_oh4301971.3 switch=n length=96.033631639324 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301972 bus1=node_oh4301971.3 bus2=node_oh4301972.3 switch=n length=122.530464629572 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.oh4301928 bus1=node_oh4301927.1.2.3 bus2=node_oh4301928.1.2.3 switch=n length=120.397875396634 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301929 bus1=node_oh4301927.3 bus2=node_oh4301929.3 switch=n length=174.525144320354 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301938 bus1=node_oh4301934.3 bus2=node_oh4301938.3 switch=n length=258.668221666211 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301936 bus1=node_xfmr4301937.3 bus2=node_oh4301936.3 switch=n length=145.18979371831998 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301939 bus1=node_xfmr4301937.3 bus2=node_oh4301939.3 switch=n length=106.68160338115999 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301935 bus1=node_xfmr4301937.3 bus2=node_oh4301935.3 switch=n length=156.46896848905598 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301940 bus1=node_oh4301939.3 bus2=node_oh4301940.3 switch=n length=67.9452249975982 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301873 bus1=node_xfmr4301876.3 bus2=node_oh4301873.3 switch=n length=53.557066760654294 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301874 bus1=node_oh4301873.3 bus2=node_oh4301874.3 switch=n length=180.598080000722 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301875 bus1=node_oh4301874.3 bus2=node_oh4301875.3 switch=n length=76.96204908906421 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4300173 bus1=node_oh4301875.3 bus2=node_oh4300173.3 switch=n length=121.68820813876002 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.oh4300174 bus1=node_oh4300173.3 bus2=node_oh4300174.3 switch=n length=184.650000270743 units=ft geometry=dup-#6:dup-#6:1 enabled=true phases=1 
+new line.ug4300180 bus1=node_oh4300174.3 bus2=node_ug4300180.3 switch=n length=60.11205952215239 units=ft geometry=#4/0-trip-600a:#4/0-trip-600a:1 enabled=true phases=1 
+new line.oh4301932 bus1=node_xfmr4301933.3 bus2=node_oh4301932.3 switch=n length=69.0624485521545 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301931 bus1=node_xfmr4301930.3 bus2=node_oh4301931.3 switch=n length=133.291057464599 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301918 bus1=node_oh4301917.3 bus2=node_oh4301918.3 switch=n length=103.727046135589 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301919 bus1=node_xfmr4301925.3 bus2=node_oh4301919.3 switch=n length=27.640587909683102 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301920 bus1=node_xfmr4301925.3 bus2=node_oh4301920.3 switch=n length=81.38946492000859 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301922 bus1=node_xfmr4301925.3 bus2=node_oh4301922.3 switch=n length=108.842856449107 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301921 bus1=node_oh4301920.3 bus2=node_oh4301921.3 switch=n length=36.206260508533795 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301924 bus1=node_oh4301922.3 bus2=node_oh4301924.3 switch=n length=115.51080382372801 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301923 bus1=node_oh4301922.3 bus2=node_oh4301923.3 switch=n length=124.89108615114999 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301889 bus1=node_oh4301887.1.2.3 bus2=node_oh4301889.1.2.3 switch=n length=187.992765020504 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301890 bus1=node_oh4301889.1.2.3 bus2=node_oh4301890.1.2.3 switch=n length=153.69336355208299 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301891 bus1=node_oh4301889.1 bus2=node_oh4301891.1 switch=n length=275.168976630545 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301892 bus1=node_oh4301891.1 bus2=node_oh4301892.1 switch=n length=247.144481022724 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301895 bus1=node_oh4301892.1 bus2=node_oh4301895.1 switch=n length=197.18685579946097 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301894 bus1=node_xfmr4301893.1 bus2=node_oh4301894.1 switch=n length=107.29781358426001 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301897 bus1=node_xfmr4301896.1 bus2=node_oh4301897.1 switch=n length=25.339680345251498 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301879 bus1=node_oh4301878.1 bus2=node_oh4301879.1 switch=n length=173.1784412102 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301880 bus1=node_oh4301879.1 bus2=node_oh4301880.1 switch=n length=170.915660195316 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301906 bus1=node_oh4301877.1.2.3 bus2=node_oh4301906.1.2.3 switch=n length=164.270597328764 units=ft geometry=#2-acsr-6/1:#2-acsr-6/1:3 enabled=true phases=3 
+new line.oh4301856 bus1=node_oh4301855.3 bus2=node_oh4301856.3 switch=n length=295.346335341982 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301850 bus1=node_xfmr4301848.3 bus2=node_oh4301850.3 switch=n length=148.28759961649098 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301851 bus1=node_oh4301850.3 bus2=node_oh4301851.3 switch=n length=101.95696396036199 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301830 bus1=node_oh4301825.3 bus2=node_oh4301830.3 switch=n length=242.09008757071499 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301831 bus1=node_oh4301830.3 bus2=node_oh4301831.3 switch=n length=251.071940686387 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301833 bus1=node_xfmr4301832.3 bus2=node_oh4301833.3 switch=n length=34.2525108569073 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301829 bus1=node_xfmr4301828.3 bus2=node_oh4301829.3 switch=n length=65.0282061877775 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301540 bus1=node_oh4301539.3 bus2=node_oh4301540.3 switch=n length=316.598746996902 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301542 bus1=node_oh4301540.3 bus2=node_oh4301542.3 switch=n length=354.577535949325 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301545 bus1=node_oh4301542.3 bus2=node_oh4301545.3 switch=n length=138.231450111773 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301543 bus1=node_t14151.3 bus2=node_oh4301543.3 switch=n length=52.6901319034219 units=ft geometry=trip-#2ser:trip-#2ser:1 enabled=true phases=1 
+new line.oh4301547 bus1=node_oh4301545.3 bus2=node_oh4301547.3 switch=n length=277.295022854673 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301549 bus1=node_oh4301547.3 bus2=node_oh4301549.3 switch=n length=358.071843349802 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301546 bus1=node_xfmr4301548.3 bus2=node_oh4301546.3 switch=n length=95.8953565089966 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.oh4301034 bus1=node_xfmr4301502.3 bus2=node_oh4301034.3 switch=n length=136.321646483433 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301035 bus1=node_oh4301034.3 bus2=node_oh4301035.3 switch=n length=68.4947684135548 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301039 bus1=node_oh4301036.3 bus2=node_oh4301039.3 switch=n length=247.65532257573201 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301038 bus1=node_oh4301036.3 bus2=node_oh4301038.3 switch=n length=273.542574748351 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301037 bus1=node_xfmr4301503.3 bus2=node_oh4301037.3 switch=n length=98.6020983549251 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301046 bus1=node_oh4301039.3 bus2=node_oh4301046.3 switch=n length=305.384708523538 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301045 bus1=node_oh4301039.3 bus2=node_oh4301045.3 switch=n length=319.88923332933797 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301040 bus1=node_oh4301039.3 bus2=node_oh4301040.3 switch=n length=438.756047593682 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301058 bus1=node_oh4301046.3 bus2=node_oh4301058.3 switch=n length=472.791013450902 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301048 bus1=node_oh4301046.3 bus2=node_oh4301048.3 switch=n length=270.235731353269 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301047 bus1=node_xfmr4301506.3 bus2=node_oh4301047.3 switch=n length=102.037383835353 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301059 bus1=node_oh4301058.3 bus2=node_oh4301059.3 switch=n length=328.82807970129903 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301060 bus1=node_oh4301059.3 bus2=node_oh4301060.3 switch=n length=362.12727044497905 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301065 bus1=node_oh4301060.3 bus2=node_oh4301065.3 switch=n length=401.26196954100897 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301061 bus1=node_oh4301060.3 bus2=node_oh4301061.3 switch=n length=225.706677127589 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301070 bus1=node_xfmr4301511.3 bus2=node_oh4301070.3 switch=n length=148.101900392982 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301072 bus1=node_xfmr4301511.3 bus2=node_oh4301072.3 switch=n length=129.683322366531 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301071 bus1=node_oh4301070.3 bus2=node_oh4301071.3 switch=n length=103.728307129828 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301066 bus1=node_oh4301065.3 bus2=node_oh4301066.3 switch=n length=300.933220831413 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301067 bus1=node_xfmr4301512.3 bus2=node_oh4301067.3 switch=n length=97.3098802795129 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301068 bus1=node_oh4301067.3 bus2=node_oh4301068.3 switch=n length=84.6659370703215 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301069 bus1=node_oh4301068.3 bus2=node_oh4301069.3 switch=n length=149.68357157694402 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301073 bus1=node_oh4301061.3 bus2=node_oh4301073.3 switch=n length=332.150643533922 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301062 bus1=node_oh4301061.3 bus2=node_oh4301062.3 switch=n length=47.6381569753295 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301078 bus1=node_oh4301073.3 bus2=node_oh4301078.3 switch=n length=381.80221817061204 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301074 bus1=node_oh4301073.3 bus2=node_oh4301074.3 switch=n length=90.75873070935471 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301077 bus1=node_xfmr4301515.3 bus2=node_oh4301077.3 switch=n length=114.821079075097 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301080 bus1=node_oh4301078.3 bus2=node_oh4301080.3 switch=n length=220.811190386759 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301084 bus1=node_oh4301078.3 bus2=node_oh4301084.3 switch=n length=172.74702255035098 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301079 bus1=node_xfmr4301517.3 bus2=node_oh4301079.3 switch=n length=84.3366616601855 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301081 bus1=node_xfmr4301518.3 bus2=node_oh4301081.3 switch=n length=67.2208010961644 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301083 bus1=node_xfmr4301518.3 bus2=node_oh4301083.3 switch=n length=46.10304653709021 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301082 bus1=node_oh4301081.3 bus2=node_oh4301082.3 switch=n length=99.8154827670587 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301085 bus1=node_oh4301084.3 bus2=node_oh4301085.3 switch=n length=641.36626485978 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301089 bus1=node_oh4301084.3 bus2=node_oh4301089.3 switch=n length=324.152304480551 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301086 bus1=node_oh4301085.3 bus2=node_oh4301086.3 switch=n length=91.0880387316168 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301087 bus1=node_oh4301086.3 bus2=node_oh4301087.3 switch=n length=64.6263057893952 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301088 bus1=node_xfmr4301519.3 bus2=node_oh4301088.3 switch=n length=170.151301199872 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301093 bus1=node_oh4301089.3 bus2=node_oh4301093.3 switch=n length=353.84149332725195 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301157 bus1=node_oh4301089.3 bus2=node_oh4301157.3 switch=n length=468.578548377892 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301090 bus1=node_oh4301089.3 bus2=node_oh4301090.3 switch=n length=537.15827574375 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301092 bus1=node_xfmr4301186.3 bus2=node_oh4301092.3 switch=n length=147.15259053124902 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301094 bus1=node_oh4301092.3 bus2=node_oh4301094.3 switch=n length=134.053388245023 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301096 bus1=node_oh4301093.3 bus2=node_oh4301096.3 switch=n length=172.568245051086 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301100 bus1=node_oh4301096.3 bus2=node_oh4301100.3 switch=n length=232.786781626471 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301099 bus1=node_xfmr4301183.3 bus2=node_oh4301099.3 switch=n length=109.63092355701099 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301097 bus1=node_xfmr4301183.3 bus2=node_oh4301097.3 switch=n length=111.00738443912901 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301098 bus1=node_oh4301097.3 bus2=node_oh4301098.3 switch=n length=73.76966924154779 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301101 bus1=node_oh4301100.3 bus2=node_oh4301101.3 switch=n length=330.05636867047997 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301104 bus1=node_oh4301101.3 bus2=node_oh4301104.3 switch=n length=108.956191196497 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301106 bus1=node_oh4301101.3 bus2=node_oh4301106.3 switch=n length=441.96285477410896 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301102 bus1=node_xfmr4301180.3 bus2=node_oh4301102.3 switch=n length=143.618713265494 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301103 bus1=node_oh4301102.3 bus2=node_oh4301103.3 switch=n length=35.2113291427502 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301109 bus1=node_oh4301106.3 bus2=node_oh4301109.3 switch=n length=429.80703135228896 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301108 bus1=node_xfmr4301135.3 bus2=node_oh4301108.3 switch=n length=93.19732024048099 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301107 bus1=node_xfmr4301135.3 bus2=node_oh4301107.3 switch=n length=101.016142274274 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301111 bus1=node_oh4301109.3 bus2=node_oh4301111.3 switch=n length=468.07501492827697 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301110 bus1=node_oh4301109.3 bus2=node_oh4301110.3 switch=n length=213.649096417506 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301123 bus1=node_oh4301121.3 bus2=node_oh4301123.3 switch=n length=478.438945425602 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301122 bus1=node_xfmr4301130.3 bus2=node_oh4301122.3 switch=n length=16.8285976835419 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301120 bus1=node_xfmr4301132.3 bus2=node_oh4301120.3 switch=n length=152.916032514581 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301114 bus1=node_oh4301110.3 bus2=node_oh4301114.3 switch=n length=346.613498006076 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301112 bus1=node_xfmr4301126.3 bus2=node_oh4301112.3 switch=n length=197.57634777474098 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301113 bus1=node_oh4301112.3 bus2=node_oh4301113.3 switch=n length=118.35466235021799 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301115 bus1=node_oh4301114.3 bus2=node_oh4301115.3 switch=n length=162.956377291618 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301136 bus1=node_oh4301115.3 bus2=node_oh4301136.3 switch=n length=507.330606705166 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301117 bus1=node_oh4301115.3 bus2=node_oh4301117.3 switch=n length=598.7839934401429 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301137 bus1=node_oh4301136.3 bus2=node_oh4301137.3 switch=n length=378.33958925828904 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301138 bus1=node_oh4301137.3 bus2=node_oh4301138.3 switch=n length=313.757144460417 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301139 bus1=node_oh4301138.3 bus2=node_oh4301139.3 switch=n length=41.3788472532307 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301141 bus1=node_oh4301139.3 bus2=node_oh4301141.3 switch=n length=203.34148838847 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301144 bus1=node_oh4301141.3 bus2=node_oh4301144.3 switch=n length=196.916784962383 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301145 bus1=node_oh4301144.3 bus2=node_oh4301145.3 switch=n length=120.994072995398 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301155 bus1=node_xfmr4301149.3 bus2=node_oh4301155.3 switch=n length=123.65459190818399 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301156 bus1=node_oh4301155.3 bus2=node_oh4301156.3 switch=n length=67.8479483845789 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301151 bus1=node_oh4301145.3 bus2=node_oh4301151.3 switch=n length=262.775957804388 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301147 bus1=node_xfmr4301150.3 bus2=node_oh4301147.3 switch=n length=50.19271759924789 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301146 bus1=node_xfmr4301150.3 bus2=node_oh4301146.3 switch=n length=21.2586970439012 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301148 bus1=node_oh4301147.3 bus2=node_oh4301148.3 switch=n length=125.05487515472299 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301152 bus1=node_xfmr4301153.3 bus2=node_oh4301152.3 switch=n length=12.8858100247871 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301142 bus1=node_xfmr4301143.3 bus2=node_oh4301142.3 switch=n length=18.968489660483197 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301116 bus1=node_xfmr4301133.3 bus2=node_oh4301116.3 switch=n length=109.89482699382 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301118 bus1=node_xfmr4301134.3 bus2=node_oh4301118.3 switch=n length=62.9716634683477 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301095 bus1=node_xfmr4301184.3 bus2=node_oh4301095.3 switch=n length=84.294671836375 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301160 bus1=node_oh4301157.3 bus2=node_oh4301160.3 switch=n length=265.137672351521 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301164 bus1=node_oh4301160.3 bus2=node_oh4301164.3 switch=n length=85.5474663563915 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301161 bus1=node_xfmr4301162.3 bus2=node_oh4301161.3 switch=n length=113.37187129100401 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301167 bus1=node_oh4301164.3 bus2=node_oh4301167.3 switch=n length=265.323541737366 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301166 bus1=node_oh4301164.3 bus2=node_oh4301166.3 switch=n length=321.732487946064 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301170 bus1=node_oh4301167.3 bus2=node_oh4301170.3 switch=n length=81.7696092688562 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301172 bus1=node_xfmr4301169.3 bus2=node_oh4301172.3 switch=n length=105.03723530259501 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301171 bus1=node_oh4301170.3 bus2=node_oh4301171.3 switch=n length=166.087008823736 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301173 bus1=node_oh4301166.3 bus2=node_oh4301173.3 switch=n length=247.347396388196 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301175 bus1=node_oh4301166.3 bus2=node_oh4301175.3 switch=n length=98.3740174030626 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301178 bus1=node_xfmr4301174.3 bus2=node_oh4301178.3 switch=n length=105.43265955104799 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301177 bus1=node_xfmr4301174.3 bus2=node_oh4301177.3 switch=n length=50.797965510561895 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301179 bus1=node_oh4301178.3 bus2=node_oh4301179.3 switch=n length=13.245848406140802 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301188 bus1=node_oh4301175.3 bus2=node_oh4301188.3 switch=n length=494.151562680888 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301195 bus1=node_oh4301188.3 bus2=node_oh4301195.3 switch=n length=288.706469792556 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301192 bus1=node_oh4301188.3 bus2=node_oh4301192.3 switch=n length=452.619762884765 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301198 bus1=node_oh4301188.3 bus2=node_oh4301198.3 switch=n length=481.533372882955 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301196 bus1=node_oh4301195.3 bus2=node_oh4301196.3 switch=n length=94.4233916992816 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh_3_43_35_3_0002 bus1=node_oh4301192.3 bus2=node_oh_3_43_35_3_0002.3 switch=n length=136.68403194421802 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh_3_43_35_3_0001 bus1=node_t18424.3 bus2=node_oh_3_43_35_3_0001.3 switch=n length=92.87725119735359 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301189 bus1=node_xfmr4301194.3 bus2=node_oh4301189.3 switch=n length=77.0103557970316 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301190 bus1=node_xfmr4301194.3 bus2=node_oh4301190.3 switch=n length=77.3627261669049 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301191 bus1=node_oh4301190.3 bus2=node_oh4301191.3 switch=n length=87.9911359173353 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301211 bus1=node_oh4301198.3 bus2=node_oh4301211.3 switch=n length=215.14840134179798 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301200 bus1=node_oh4301198.3 bus2=node_oh4301200.3 switch=n length=206.45582215096402 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301199 bus1=node_xfmr4308021.3 bus2=node_oh4301199.3 switch=n length=158.042004859535 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301216 bus1=node_oh4301211.3 bus2=node_oh4301216.3 switch=n length=244.705235130154 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301217 bus1=node_oh4301216.3 bus2=node_oh4301217.3 switch=n length=153.375553788732 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301223 bus1=node_oh4301216.3 bus2=node_oh4301223.3 switch=n length=288.676492288387 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301218 bus1=node_oh4301217.3 bus2=node_oh4301218.3 switch=n length=403.27743018922007 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301219 bus1=node_oh4301218.3 bus2=node_oh4301219.3 switch=n length=392.62352260149396 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301220 bus1=node_xfmr4301221.3 bus2=node_oh4301220.3 switch=n length=77.9578661841383 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301232 bus1=node_oh4301223.3 bus2=node_oh4301232.3 switch=n length=400.58490435862 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301224 bus1=node_oh4301223.3 bus2=node_oh4301224.3 switch=n length=149.526823011655 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301233 bus1=node_oh4301232.3 bus2=node_oh4301233.3 switch=n length=407.123806476636 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301236 bus1=node_oh4301232.3 bus2=node_oh4301236.3 switch=n length=512.915954518934 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301527 bus1=node_oh4301232.3 bus2=node_oh4301527.3 switch=n length=231.539265352625 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301234 bus1=node_xfmr4301235.3 bus2=node_oh4301234.3 switch=n length=127.008680805749 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301246 bus1=node_oh4301236.3 bus2=node_oh4301246.3 switch=n length=436.669116952425 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301528 bus1=node_oh4301236.3 bus2=node_oh4301528.3 switch=n length=333.753458259216 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301238 bus1=node_xfmr4301237.3 bus2=node_oh4301238.3 switch=n length=128.129957855291 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301240 bus1=node_oh4301528.3 bus2=node_oh4301240.3 switch=n length=301.362882916875 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301241 bus1=node_oh4301240.3 bus2=node_oh4301241.3 switch=n length=297.895801917396 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301529 bus1=node_oh4301241.3 bus2=node_oh4301529.3 switch=n length=231.329967146444 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301244 bus1=node_xfmr4301245.3 bus2=node_oh4301244.3 switch=n length=29.516939204470702 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301530 bus1=node_oh4301529.3 bus2=node_oh4301530.3 switch=n length=242.138841576669 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301531 bus1=node_oh4301530.3 bus2=node_oh4301531.3 switch=n length=139.718881329699 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301532 bus1=node_oh4301531.3 bus2=node_oh4301532.3 switch=n length=128.561248438171 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301533 bus1=node_oh4301532.3 bus2=node_oh4301533.3 switch=n length=218.159969976134 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301534 bus1=node_oh4301533.3 bus2=node_oh4301534.3 switch=n length=250.98283148462897 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301242 bus1=node_xfmr4301243.3 bus2=node_oh4301242.3 switch=n length=84.93144176322059 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301225 bus1=node_oh4301224.3 bus2=node_oh4301225.3 switch=n length=150.301558541457 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301229 bus1=node_xfmr4301228.3 bus2=node_oh4301229.3 switch=n length=161.162580334181 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301230 bus1=node_xfmr4301227.3 bus2=node_oh4301230.3 switch=n length=152.404903136422 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301226 bus1=node_xfmr4301227.3 bus2=node_oh4301226.3 switch=n length=25.594452524053803 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301213 bus1=node_xfmr4301212.3 bus2=node_oh4301213.3 switch=n length=125.222164970951 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301214 bus1=node_oh4301213.3 bus2=node_oh4301214.3 switch=n length=101.323431643466 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301215 bus1=node_oh4301214.3 bus2=node_oh4301215.3 switch=n length=189.383619671834 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301201 bus1=node_oh4301200.3 bus2=node_oh4301201.3 switch=n length=359.02344352429395 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301206 bus1=node_oh4301201.3 bus2=node_oh4301206.3 switch=n length=331.55468704279497 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301205 bus1=node_xfmr4301204.3 bus2=node_oh4301205.3 switch=n length=103.328739951744 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301202 bus1=node_xfmr4301204.3 bus2=node_oh4301202.3 switch=n length=148.535477580189 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301203 bus1=node_oh4301202.3 bus2=node_oh4301203.3 switch=n length=42.237377996443 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301209 bus1=node_xfmr4301210.3 bus2=node_oh4301209.3 switch=n length=75.1190688172471 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301207 bus1=node_xfmr4301210.3 bus2=node_oh4301207.3 switch=n length=102.24568157150401 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301208 bus1=node_oh4301207.3 bus2=node_oh4301208.3 switch=n length=22.3960375958386 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301165 bus1=node_xfmr4301168.3 bus2=node_oh4301165.3 switch=n length=99.4083462290415 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301159 bus1=node_xfmr4301163.3 bus2=node_oh4301159.3 switch=n length=142.827762707453 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301158 bus1=node_xfmr4301163.3 bus2=node_oh4301158.3 switch=n length=124.79095359848301 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301091 bus1=node_oh4301090.3 bus2=node_oh4301091.3 switch=n length=321.650457018199 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301075 bus1=node_oh4301074.3 bus2=node_oh4301075.3 switch=n length=407.96125024318604 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301076 bus1=node_xfmr4301516.3 bus2=node_oh4301076.3 switch=n length=20.8069315373357 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301063 bus1=node_oh4301062.3 bus2=node_oh4301063.3 switch=n length=241.870260470265 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301064 bus1=node_xfmr4301514.3 bus2=node_oh4301064.3 switch=n length=72.1246435000912 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301050 bus1=node_oh4301048.3 bus2=node_oh4301050.3 switch=n length=273.67442646318904 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301049 bus1=node_xfmr4301507.3 bus2=node_oh4301049.3 switch=n length=82.6647615371203 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301051 bus1=node_xfmr4301508.3 bus2=node_oh4301051.3 switch=n length=122.643154721353 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301055 bus1=node_oh4301040.3 bus2=node_oh4301055.3 switch=n length=430.09735467677103 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301057 bus1=node_xfmr4301509.3 bus2=node_oh4301057.3 switch=n length=133.998695889252 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301056 bus1=node_xfmr4301510.3 bus2=node_oh4301056.3 switch=n length=33.2723699187387 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301041 bus1=node_oh4301038.3 bus2=node_oh4301041.3 switch=n length=68.50510345959229 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301042 bus1=node_xfmr4301504.3 bus2=node_oh4301042.3 switch=n length=38.526049628732096 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301043 bus1=node_xfmr4301505.3 bus2=node_oh4301043.3 switch=n length=94.17723079387122 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301044 bus1=node_oh4301043.3 bus2=node_oh4301044.3 switch=n length=103.274442143241 units=ft geometry=#4-acsr-6/1:#4-acsr-6/1:1 enabled=true phases=1 
+new line.oh4301504 bus1=node_oh4301503.1 bus2=node_oh4301504.1 switch=n length=684.245118725905 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4301505 bus1=node_oh4301504.1 bus2=node_oh4301505.1 switch=n length=170.307888542999 units=ft geometry=#4-acsr-7/1:#4-acsr-7/1:1 enabled=true phases=1 
+new line.oh4307319 bus1=node_xfmr4301522.1 bus2=node_oh4307319.1 switch=n length=7.9705234539611105 units=ft geometry=trip-#1/0:trip-#1/0:1 enabled=true phases=1 
+new line.ug4301287 bus1=node_ug4301286.1 bus2=node_ug4301287.1 switch=n length=254.074778952841 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug_3_32_15_3_0001 bus1=node_ug_3_32_15_3_2.3 bus2=node_ug_3_32_15_3_0001.3 switch=n length=171.85302134748798 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug_3_32_15_3_0002 bus1=node_ug_3_32_15_3_2.3 bus2=node_ug_3_32_15_3_0002.3 switch=n length=22.3993126746981 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug_3_32_15_3_0003 bus1=node_ug_3_32_15_3_0004.3 bus2=node_ug_3_32_15_3_0003.3 switch=n length=339.508372220818 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug4301171 bus1=node_ug4301169.3 bus2=node_ug4301171.3 switch=n length=232.06964342617997 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+new line.ug4300056 bus1=node_ug4301973.1.2.3 bus2=node_ug4300056.1.2.3 switch=n length=136.104278404486 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:3 enabled=true phases=3 
+new line.ug4303902 bus1=node_ug4303901.2 bus2=node_ug4303902.2 switch=n length=94.97597745722159 units=ft geometry=none:none:1 enabled=true phases=1 
+new line.ug4301975 bus1=node_ug4301966.1.2.3 bus2=node_ug4301975.1.2.3 switch=n length=230.39148530267602 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:3 enabled=true phases=3 
+new line.ug4300181 bus1=node_ug4300180.3 bus2=node_ug4300181.3 switch=n length=65.9384743528983 units=ft geometry=#4/0-trip-600a:#4/0-trip-600a:1 enabled=true phases=1 
+new line.ug4300182 bus1=node_ug4300181.3 bus2=node_ug4300182.3 switch=n length=60.7638659073697 units=ft geometry=#4/0-trip-600a:#4/0-trip-600a:1 enabled=true phases=1 
+new line.ug4300183 bus1=node_ug4300182.3 bus2=node_ug4300183.3 switch=n length=81.5230820074955 units=ft geometry=#4/0-trip-600a:#4/0-trip-600a:1 enabled=true phases=1 
+new line.ug4301903 bus1=node_ug4301555.1.2.3 bus2=node_ug4301903.1.2.3 switch=n length=182.56964287631502 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:3 enabled=true phases=3 
+new line.ug4301563 bus1=node_ug4301555.1.2.3 bus2=node_ug4301563.1.2.3 switch=n length=461.73697144575897 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:3 enabled=true phases=3 
+new line.ug4301561 bus1=node_ug4301555.1.2.3 bus2=node_ug4301561.1.2.3 switch=n length=69.1567494898456 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:3 enabled=true phases=3 
+new line.ug4301125 bus1=node_ug4301124.3 bus2=node_ug4301125.3 switch=n length=477.43460536484 units=ft geometry=#1/0-25kv-jac:#1/0-25kv-jac:1 enabled=true phases=1 
+!fuse definations
+new line.64044-cp571113943-56704 bus1=node_oh4301053.1.2.3 bus2=node_64044-cp571113943-56704.1.2.3 switch=y length=0.001 units=ft enabled=true phases=3 
+new line.ocd4300153 bus1=node_oh4301275.1 bus2=node_ocd4300153.1 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4307480 bus1=node_oh4307479.3 bus2=node_ocd4307480.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4307468 bus1=node_oh4307466.3 bus2=node_ocd4307468.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4303060 bus1=node_oh_3_32_25_3_0001.3 bus2=node_ocd4303060.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd21004623 bus1=node_ug_3_32_15_3_0001.3 bus2=node_ocd21004623.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd21004604 bus1=node_ug_3_32_15_3_0002.3 bus2=node_ocd21004604.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4300203 bus1=node_oh4301470.3 bus2=node_ocd4300203.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4303056 bus1=node_oh4303146.3 bus2=node_ocd4303056.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4307352 bus1=node_oh4307348.3 bus2=node_ocd4307352.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4307354 bus1=node_ug4307353.3 bus2=node_ocd4307354.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4300174 bus1=node_oh4301320.2 bus2=node_ocd4300174.2 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4303019 bus1=node_oh4301581.2 bus2=node_ocd4303019.2 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4300150 bus1=node_oh4301247.3 bus2=node_ocd4300150.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4300055 bus1=node_oh4301168.3 bus2=node_ocd4300055.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4302602 bus1=node_oh4301884.1.2.3 bus2=node_ocd4302602.1.2.3 switch=y length=0.001 units=ft enabled=true phases=3 
+new line.ocd4308022 bus1=node_oh4301915.1.2.3 bus2=node_ocd4308022.1.2.3 switch=y length=0.001 units=ft enabled=true phases=3 
+new line.ocd4300047 bus1=node_oh4302618.1.2.3 bus2=node_ocd4300047.1.2.3 switch=y length=0.001 units=ft enabled=true phases=3 
+new line.ocd4303894 bus1=node_oh4302612.3 bus2=node_ocd4303894.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4303895 bus1=node_oh4301567.2 bus2=node_ocd4303895.2 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4302743 bus1=node_oh4302609.1.2.3 bus2=node_ocd4302743.1.2.3 switch=y length=0.001 units=ft enabled=true phases=3 
+new line.ocd4302623 bus1=node_oh4301928.3 bus2=node_ocd4302623.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4302603 bus1=node_oh4301890.1.2.3 bus2=node_ocd4302603.1.2.3 switch=y length=0.001 units=ft enabled=true phases=3 
+new line.16556b-4 bus1=node_oh4301033.3 bus2=node_16556b-4.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4302594 bus1=node_oh4301104.3 bus2=node_ocd4302594.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4302595 bus1=node_oh4301111.3 bus2=node_ocd4302595.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4302596 bus1=node_oh4301123.3 bus2=node_ocd4302596.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4307828 bus1=node_oh4301151.3 bus2=node_ocd4307828.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.ocd4303004 bus1=node_oh4301505.1 bus2=node_ocd4303004.1 switch=y length=0.001 units=ft enabled=true phases=1 
+!switch definations
+new line.sw4307458 bus1=node_oh4307457.3 bus2=node_sw4307458.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.sw4307458-b bus1=node_sw4307458.3 bus2=node_sw4307458-b.3 switch=y length=0.001 units=ft enabled=true phases=1 
+!tr definations
+new transformer.xfmr4301285 buses=[node_oh4301275.1 node_xfmr4301285.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4307469 buses=[node_oh4307466.3 node_xfmr4307469.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300830 buses=[node_oh_3_32_25_3_0001.3 node_xfmr4300830.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301474 buses=[node_oh4301470.3 node_xfmr4301474.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307351 buses=[node_oh4307348.3 node_xfmr4307351.3] xfmrcode=0-kva-1ph-ug 
+new transformer.t_3120 buses=[node_oh4301581.2 node_t_3120.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301955 buses=[node_oh4302612.3 node_xfmr4301955.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301933 buses=[node_oh4301928.3 node_xfmr4301933.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301502 buses=[node_oh4301033.3 node_xfmr4301502.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301129 buses=[node_oh4301123.3 node_xfmr4301129.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301153 buses=[node_oh4301151.3 node_xfmr4301153.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301513 buses=[node_oh4301505.1 node_xfmr4301513.1] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301248 buses=[node_oh4301031.3 node_xfmr4301248.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301136 buses=[node_oh4301124.3 node_xfmr4301136.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301164 buses=[node_oh4301140.3 node_xfmr4301164.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301188 buses=[node_oh4301176.3 node_xfmr4301188.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301195 buses=[node_oh4301193.3 node_xfmr4301195.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301223 buses=[node_oh4301210.3 node_xfmr4301223.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301229 buses=[node_oh4301227.1 node_xfmr4301229.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301252 buses=[node_oh4301251.3 node_xfmr4301252.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301268 buses=[node_oh4301265.3 node_xfmr4301268.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301280 buses=[node_oh4301270.3 node_xfmr4301280.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301274 buses=[node_oh4301273.3 node_xfmr4301274.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303018 buses=[node_oh4301578.3 node_xfmr4303018.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301297 buses=[node_oh4301295.2 node_xfmr4301297.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300154 buses=[node_oh4301298.3 node_xfmr4300154.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301302 buses=[node_oh4301301.1 node_xfmr4301302.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301306 buses=[node_oh4301305.3 node_xfmr4301306.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301316 buses=[node_oh4301314.1 node_xfmr4301316.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301323 buses=[node_oh4301319.3 node_xfmr4301323.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303052 buses=[node_oh4303144.3 node_xfmr4303052.3] xfmrcode=15-kva-1ph 
+new transformer.xfmr4303053 buses=[node_oh4303145.3 node_xfmr4303053.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301333 buses=[node_oh4301331.3 node_xfmr4301333.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301339 buses=[node_oh4301332.3 node_xfmr4301339.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301345 buses=[node_oh4301340.3 node_xfmr4301345.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301347 buses=[node_oh4301344.3 node_xfmr4301347.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301351 buses=[node_oh4301346.3 node_xfmr4301351.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301353 buses=[node_oh4301350.3 node_xfmr4301353.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300177 buses=[node_oh4301362.3 node_xfmr4300177.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301372 buses=[node_oh4301367.3 node_xfmr4301372.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301371 buses=[node_oh4301368.3 node_xfmr4301371.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301376 buses=[node_oh4301375.3 node_xfmr4301376.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301385 buses=[node_oh4301383.3 node_xfmr4301385.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301395 buses=[node_oh4301391.3 node_xfmr4301395.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303055 buses=[node_oh4303143.3 node_xfmr4303055.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301398 buses=[node_oh4301392.3 node_xfmr4301398.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301394 buses=[node_oh4301393.3 node_xfmr4301394.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301401 buses=[node_oh4301396.3 node_xfmr4301401.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301400 buses=[node_oh4301397.3 node_xfmr4301400.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301404 buses=[node_oh4301403.3 node_xfmr4301404.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307320 buses=[node_oh4300183.3 node_xfmr4307320.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301412 buses=[node_oh4301411.3 node_xfmr4301412.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301414 buses=[node_oh4301413.3 node_xfmr4301414.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307338 buses=[node_oh4307335.3 node_xfmr4307338.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301420 buses=[node_oh4301415.3 node_xfmr4301420.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301419 buses=[node_oh4301417.3 node_xfmr4301419.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307358 buses=[node_oh4307357.3 node_xfmr4307358.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307362 buses=[node_oh4307356.3 node_xfmr4307362.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307364 buses=[node_oh4307355.3 node_xfmr4307364.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303054 buses=[node_oh4301422.3 node_xfmr4303054.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301428 buses=[node_oh4301424.3 node_xfmr4301428.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301430 buses=[node_oh4301425.3 node_xfmr4301430.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301434 buses=[node_oh4301427.3 node_xfmr4301434.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301436 buses=[node_oh4301435.3 node_xfmr4301436.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301448 buses=[node_oh4301447.3 node_xfmr4301448.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301455 buses=[node_oh4301453.3 node_xfmr4301455.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301461 buses=[node_oh4301457.3 node_xfmr4301461.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301464 buses=[node_oh4301463.3 node_xfmr4301464.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307425 buses=[node_oh4307423.3 node_xfmr4307425.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301467 buses=[node_oh4301465.3 node_xfmr4301467.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307428 buses=[node_oh4307426.3 node_xfmr4307428.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307436 buses=[node_oh4307435.3 node_xfmr4307436.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307440 buses=[node_oh4307439.3 node_xfmr4307440.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307442 buses=[node_oh4307441.3 node_xfmr4307442.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307450 buses=[node_oh4307449.3 node_xfmr4307450.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307465 buses=[node_oh4307464.3 node_xfmr4307465.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307471 buses=[node_oh4307470.3 node_xfmr4307471.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301476 buses=[node_oh4301475.3 node_xfmr4301476.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301481 buses=[node_oh4301478.3 node_xfmr4301481.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301484 buses=[node_oh4301482.3 node_xfmr4301484.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300216 buses=[node_oh4301485.3 node_xfmr4300216.3] xfmrcode=0-kva-1ph-ug
+new transformer.xfmr4301491 buses=[node_oh4301488.3 node_xfmr4301491.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301493 buses=[node_oh4301492.3 node_xfmr4301493.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300829 buses=[node_oh4307475.3 node_xfmr4300829.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4300831 buses=[node_oh4307467.3 node_xfmr4300831.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307455 buses=[node_oh4307454.3 node_xfmr4307455.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307447 buses=[node_oh4307446.3 node_xfmr4307447.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr21000113 buses=[node_oh21000112.3 node_xfmr21000113.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300204 buses=[node_oh4301473.3 node_xfmr4300204.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307431 buses=[node_oh4307430.3 node_xfmr4307431.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307434 buses=[node_oh4307433.3 node_xfmr4307434.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307417 buses=[node_oh4301456.3 node_xfmr4307417.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307420 buses=[node_oh4307418.3 node_xfmr4307420.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307414 buses=[node_oh4301451.3 node_xfmr4307414.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307403 buses=[node_oh4301445.3 node_xfmr4307403.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307405 buses=[node_oh4307398.3 node_xfmr4307405.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307408 buses=[node_oh4307399.3 node_xfmr4307408.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307410 buses=[node_oh4307401.3 node_xfmr4307410.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307394 buses=[node_oh4300202.3 node_xfmr4307394.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307397 buses=[node_oh4307395.3 node_xfmr4307397.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301439 buses=[node_oh4301437.3 node_xfmr4301439.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307384 buses=[node_oh4307383.3 node_xfmr4307384.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307389 buses=[node_oh4307385.3 node_xfmr4307389.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307392 buses=[node_oh4307390.3 node_xfmr4307392.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303057 buses=[node_oh4303150.3 node_xfmr4303057.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303058 buses=[node_oh4303151.3 node_xfmr4303058.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4303059 buses=[node_oh4303153.3 node_xfmr4303059.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307368 buses=[node_oh4301441.3 node_xfmr4307368.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307370 buses=[node_oh4307367.3 node_xfmr4307370.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307374 buses=[node_oh4307371.3 node_xfmr4307374.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307377 buses=[node_oh4307376.3 node_xfmr4307377.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307380 buses=[node_oh4307379.3 node_xfmr4307380.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307339 buses=[node_oh4300192.3 node_xfmr4307339.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307347 buses=[node_oh4307342.3 node_xfmr4307347.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307330 buses=[node_oh4300190.3 node_xfmr4307330.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307333 buses=[node_oh4307329.3 node_xfmr4307333.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307328 buses=[node_oh4300185.3 node_xfmr4307328.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301408 buses=[node_oh4301407.3 node_xfmr4301408.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307326 buses=[node_oh4300182.3 node_xfmr4307326.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307321 buses=[node_oh4300181.3 node_xfmr4307321.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301380 buses=[node_oh4301379.3 node_xfmr4301380.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300178 buses=[node_oh4301384.3 node_xfmr4300178.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301374 buses=[node_oh4301373.3 node_xfmr4301374.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301338 buses=[node_oh4301334.3 node_xfmr4301338.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301324 buses=[node_oh4301321.2 node_xfmr4301324.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300175 buses=[node_oh4301494.3 node_xfmr4300175.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301360 buses=[node_oh4301358.2 node_xfmr4301360.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300172 buses=[node_oh4300170.2 node_xfmr4300172.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301293 buses=[node_oh4301278.1 node_xfmr4301293.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301283 buses=[node_oh4301281.1 node_xfmr4301283.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301258 buses=[node_oh4301253.1 node_xfmr4301258.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301260 buses=[node_oh4301255.1 node_xfmr4301260.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301264 buses=[node_oh4301262.1 node_xfmr4301264.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301520 buses=[node_oh4301143.2 node_xfmr4301520.2] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301151 buses=[node_oh4301149.2 node_xfmr4301151.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301541 buses=[node_oh4300147.2 node_xfmr4301541.2] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301120 buses=[node_oh4301105.3 node_xfmr4301120.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307823 buses=[node_oh4307821.1 node_xfmr4307823.1] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307824 buses=[node_oh4307822.1 node_xfmr4307824.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301823 buses=[node_oh4301821.1 node_xfmr4301823.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301827 buses=[node_oh4301826.3 node_xfmr4301827.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301848 buses=[node_oh4301847.3 node_xfmr4301848.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301854 buses=[node_oh4301853.3 node_xfmr4301854.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301858 buses=[node_oh4301857.3 node_xfmr4301858.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301864 buses=[node_oh4301863.1 node_xfmr4301864.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301869 buses=[node_oh4301868.3 node_xfmr4301869.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301882 buses=[node_oh4301870.3 node_xfmr4301882.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4302606 buses=[node_oh4301910.1 node_xfmr4302606.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301964 buses=[node_oh4302616.3 node_xfmr4301964.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301977 buses=[node_oh4302610.3 node_xfmr4301977.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301983 buses=[node_oh4301982.3 node_xfmr4301983.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4302009 buses=[node_oh4302007.3 node_xfmr4302009.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4302018 buses=[node_oh4302014.3 node_xfmr4302018.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300048 buses=[node_oh4302015.3 node_xfmr4300048.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300051 buses=[node_oh4302022.3 node_xfmr4300051.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301553 buses=[node_oh4301552.3 node_xfmr4301553.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300052 buses=[node_oh4302021.3 node_xfmr4300052.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303015 buses=[node_oh4302024.3 node_xfmr4303015.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4302028 buses=[node_oh4302025.3 node_xfmr4302028.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300053 buses=[node_oh4302029.3 node_xfmr4300053.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4302041 buses=[node_oh4302040.3 node_xfmr4302041.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4302045 buses=[node_oh4302036.3 node_xfmr4302045.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303016 buses=[node_oh4301576.3 node_xfmr4303016.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303017 buses=[node_oh4301577.3 node_xfmr4303017.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303283 buses=[node_oh4301981.3 node_xfmr4303283.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300058 buses=[node_oh4300203.2 node_xfmr4300058.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301949 buses=[node_oh4301948.2 node_xfmr4301949.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301993 buses=[node_oh4301987.2 node_xfmr4301993.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301994 buses=[node_oh4301991.2 node_xfmr4301994.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301999 buses=[node_oh4301998.2 node_xfmr4301999.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4302002 buses=[node_oh4302001.2 node_xfmr4302002.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4308023 buses=[node_oh4302003.2 node_xfmr4308023.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301947 buses=[node_oh4301944.2 node_xfmr4301947.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301942 buses=[node_oh4302614.2 node_xfmr4301942.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4300059 buses=[node_oh4301568.2 node_xfmr4300059.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4302614 buses=[node_oh4301927.1.2.3 node_xfmr4302614.1.2.3] xfmrcode=0-kva-3ph
+new transformer.xfmr4301937 buses=[node_oh4301934.3 node_xfmr4301937.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301876 buses=[node_oh4301938.3 node_xfmr4301876.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301930 buses=[node_oh4301929.3 node_xfmr4301930.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301925 buses=[node_oh4301918.3 node_xfmr4301925.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301913 buses=[node_oh4301912.3 node_xfmr4301913.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303014 buses=[node_oh4301565.3 node_xfmr4303014.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301893 buses=[node_oh4301892.1 node_xfmr4301893.1] xfmrcode=15-kva-1ph 
+new transformer.xfmr4301896 buses=[node_oh4301895.1 node_xfmr4301896.1] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301881 buses=[node_oh4301880.1 node_xfmr4301881.1] xfmrcode=0-kva-1ph 
+new transformer.xfmr4301907 buses=[node_oh4301906.1.2.3 node_xfmr4301907.1.2.3] xfmrcode=0-kva-3ph 
+new transformer.xfmr4303282 buses=[node_oh4301856.3 node_xfmr4303282.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301828 buses=[node_oh4301825.3 node_xfmr4301828.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301832 buses=[node_oh4301831.3 node_xfmr4301832.3] xfmrcode=15-kva-1ph 
+new transformer.t14151 buses=[node_oh4301542.3 node_t14151.3] xfmrcode=15-kva-1ph 
+new transformer.xfmr4301548 buses=[node_oh4301545.3 node_xfmr4301548.3] xfmrcode=15-kva-1ph 
+new transformer.xfmr4301503 buses=[node_oh4301036.3 node_xfmr4301503.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301506 buses=[node_oh4301046.3 node_xfmr4301506.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301511 buses=[node_oh4301060.3 node_xfmr4301511.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301512 buses=[node_oh4301066.3 node_xfmr4301512.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301515 buses=[node_oh4301073.3 node_xfmr4301515.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301517 buses=[node_oh4301078.3 node_xfmr4301517.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301518 buses=[node_oh4301080.3 node_xfmr4301518.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301185 buses=[node_oh4301085.3 node_xfmr4301185.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301519 buses=[node_oh4301087.3 node_xfmr4301519.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301186 buses=[node_oh4301089.3 node_xfmr4301186.3] xfmrcode=15-kva-1ph 
+new transformer.xfmr4301184 buses=[node_oh4301093.3 node_xfmr4301184.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301183 buses=[node_oh4301096.3 node_xfmr4301183.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301181 buses=[node_oh4301100.3 node_xfmr4301181.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301180 buses=[node_oh4301101.3 node_xfmr4301180.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301135 buses=[node_oh4301106.3 node_xfmr4301135.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301132 buses=[node_oh4301109.3 node_xfmr4301132.3] xfmrcode=15-kva-1ph 
+new transformer.xfmr4301130 buses=[node_oh4301121.3 node_xfmr4301130.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301126 buses=[node_oh4301110.3 node_xfmr4301126.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301133 buses=[node_oh4301115.3 node_xfmr4301133.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301140 buses=[node_oh4301138.3 node_xfmr4301140.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301143 buses=[node_oh4301141.3 node_xfmr4301143.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301149 buses=[node_oh4301144.3 node_xfmr4301149.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301150 buses=[node_oh4301145.3 node_xfmr4301150.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301134 buses=[node_oh4301117.3 node_xfmr4301134.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301163 buses=[node_oh4301157.3 node_xfmr4301163.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301162 buses=[node_oh4301160.3 node_xfmr4301162.3] xfmrcode=25-kva-1ph 
+new transformer.xfmr4301168 buses=[node_oh4301164.3 node_xfmr4301168.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301169 buses=[node_oh4301167.3 node_xfmr4301169.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301174 buses=[node_oh4301173.3 node_xfmr4301174.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301194 buses=[node_oh4301188.3 node_xfmr4301194.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301197 buses=[node_oh4301196.3 node_xfmr4301197.3] xfmrcode=0-kva-1ph-ug 
+new transformer.t18424 buses=[node_oh4301192.3 node_t18424.3] xfmrcode=15-kva-1ph 
+new transformer.xfmr4301193 buses=[node_oh_3_43_35_3_0002.3 node_xfmr4301193.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4308021 buses=[node_oh4301198.3 node_xfmr4308021.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301212 buses=[node_oh4301211.3 node_xfmr4301212.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301222 buses=[node_oh4301216.3 node_xfmr4301222.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301221 buses=[node_oh4301219.3 node_xfmr4301221.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301231 buses=[node_oh4301223.3 node_xfmr4301231.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301235 buses=[node_oh4301233.3 node_xfmr4301235.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301237 buses=[node_oh4301236.3 node_xfmr4301237.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301247 buses=[node_oh4301246.3 node_xfmr4301247.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301243 buses=[node_oh4301240.3 node_xfmr4301243.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301245 buses=[node_oh4301241.3 node_xfmr4301245.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303006 buses=[node_oh4301533.3 node_xfmr4303006.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4303009 buses=[node_oh4301534.3 node_xfmr4303009.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4303005 buses=[node_oh4301527.3 node_xfmr4303005.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301228 buses=[node_oh4301224.3 node_xfmr4301228.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301227 buses=[node_oh4301225.3 node_xfmr4301227.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4302593 buses=[node_oh4301200.3 node_xfmr4302593.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301204 buses=[node_oh4301201.3 node_xfmr4301204.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301210 buses=[node_oh4301206.3 node_xfmr4301210.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301187 buses=[node_oh4301090.3 node_xfmr4301187.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4302592 buses=[node_oh4301091.3 node_xfmr4302592.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301516 buses=[node_oh4301075.3 node_xfmr4301516.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301514 buses=[node_oh4301063.3 node_xfmr4301514.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301507 buses=[node_oh4301048.3 node_xfmr4301507.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301508 buses=[node_oh4301050.3 node_xfmr4301508.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301509 buses=[node_oh4301040.3 node_xfmr4301509.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301510 buses=[node_oh4301055.3 node_xfmr4301510.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301504 buses=[node_oh4301038.3 node_xfmr4301504.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301505 buses=[node_oh4301041.3 node_xfmr4301505.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301522 buses=[node_oh4301514.1 node_xfmr4301522.1] xfmrcode=0-kva-1ph
+new transformer.xfmr4301294 buses=[node_ug4301287.1 node_xfmr4301294.1] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4307482 buses=[node_ug4307481.3 node_xfmr4307482.3] xfmrcode=0-kva-1ph-ug 
+new transformer.t_3_32_15_1_0001 buses=[node_ug_3_32_15_1_0001.3 node_t_3_32_15_1_0001.3] xfmrcode=15-kva-1ph 
+new transformer.t_3_32_15_3_0001 buses=[node_ug_3_32_15_3_0003.3 node_t_3_32_15_3_0001.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4303148 buses=[node_ug4303147.3 node_xfmr4303148.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301580 buses=[node_ug4301579.2 node_xfmr4301580.2] xfmrcode=100-kva-1ph 
+new transformer.xfmr4303905 buses=[node_ug4303904.2 node_xfmr4303905.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301250 buses=[node_ug4301249.3 node_xfmr4301250.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301170 buses=[node_ug4301169.3 node_xfmr4301170.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301172 buses=[node_ug4301171.3 node_xfmr4301172.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301888 buses=[node_ug4301885.1.2.3 node_xfmr4301888.1.2.3] xfmrcode=0-kva-3ph-ug 
+new transformer.xfmr4301974 buses=[node_ug4301973.3 node_xfmr4301974.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4303893 buses=[node_ug4300056.1.2.3 node_xfmr4303893.1.2.3] xfmrcode=0-kva-3ph
+new transformer.xfmr4303897 buses=[node_ug4303896.2 node_xfmr4303897.2] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301967 buses=[node_ug4301966.1.2.3 node_xfmr4301967.1.2.3] xfmrcode=0-kva-3ph
+new transformer.xfmr4301976 buses=[node_ug4301975.1.2.3 node_xfmr4301976.1.2.3] xfmrcode=0-kva-3ph
+new transformer.xfmr4301904 buses=[node_ug4301903.1.2.3 node_xfmr4301904.1.2.3] xfmrcode=500-kva-3ph-ug 
+new transformer.xfmr4301564 buses=[node_ug4301563.1.2.3 node_xfmr4301564.1.2.3] xfmrcode=300-kva-3ph-ug 
+new transformer.xfmr4301562 buses=[node_ug4301561.1.2.3 node_xfmr4301562.1.2.3] xfmrcode=167-kva-3ph-ug
+new transformer.xfmr4301182 buses=[node_ug4301105.3 node_xfmr4301182.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301131 buses=[node_ug4301119.3 node_xfmr4301131.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301128 buses=[node_ug4301124.3 node_xfmr4301128.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301127 buses=[node_ug4301125.3 node_xfmr4301127.3] xfmrcode=10-kva-1ph 
+new transformer.xfmr4301789 buses=[node_ug4301154.3 node_xfmr4301789.3] xfmrcode=0-kva-1ph-ug 
+new transformer.xfmr4301525 buses=[node_ug4301524.1 node_xfmr4301525.1] xfmrcode=10-kva-1ph-ug 
+!Regulator definations
+New Transformer.VREG4_A phases=1 windings=2 bank=VREG4 buses=(node_oh4307318.1 node_reg4302742.1) conns=(wye, wye) kvs=(7.2, 7.2) kvas=(10000, 10000) xhl=0.1 %loadloss=.01 Wdg=2 Maxtap=1.1 Mintap=0.9 tap=1 ppm=0 
+!Add regulator defination hereNew Transformer.VREG4_B phases=1 windings=2 bank=VREG4 buses=(node_oh4307318.2 node_reg4302742.2) conns=(wye, wye) kvs=(7.2, 7.2) kvas=(10000, 10000) xhl=0.1 %loadloss=.01 Wdg=2 Maxtap=1.1 Mintap=0.9 tap=1 ppm=0 
+!Add regulator defination hereNew Transformer.VREG4_C phases=1 windings=2 bank=VREG4 buses=(node_oh4307318.3 node_reg4302742.3) conns=(wye, wye) kvs=(7.2, 7.2) kvas=(10000, 10000) xhl=0.1 %loadloss=.01 Wdg=2 Maxtap=1.1 Mintap=0.9 tap=1 ppm=0 
+!Add regulator defination here!load definations
+new load.350199708 bus1=node_oh4301284.1 conn=y phases=1 kv=0.12009237875288684 kw=0.945278823375702 kvar=0.0608032494783401 
+new load.27967 bus1=node_xfmr4307469.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.250008301 bus1=node_xfmr4307469.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0748735666275024 kvar=0.00481609860435128 
+new load.315390018 bus1=node_xfmr4307469.3 conn=y phases=1 kv=0.12009237875288684 kw=0.21526150405407 kvar=0.0138462837785482 
+new load.350213107 bus1=node_xfmr4307469.3 conn=y phases=1 kv=0.12009237875288684 kw=1.17613935470581 kvar=0.0756529122591019 
+new load.27961 bus1=node_xfmr4300830.3 conn=y phases=1 kv=0.12009237875288684 kw=1.39763963222504 kvar=0.0899004861712456 
+new load.330132140 bus1=node_oh4301471.3 conn=y phases=1 kv=0.12009237875288684 kw=0.290135085582733 kvar=0.0186623837798834 
+new load.150014703 bus1=node_oh4301471.3 conn=y phases=1 kv=0.12009237875288684 kw=0.315092980861664 kvar=0.0202677510678768 
+new load.350198604 bus1=node_oh4301471.3 conn=y phases=1 kv=0.12009237875288684 kw=1.41635799407959 kvar=0.0911045148968697 
+new load.350311538 bus1=node_oh4301471.3 conn=y phases=1 kv=0.12009237875288684 kw=1.06070840358734 kvar=0.0682280361652374 
+new load.350291809 bus1=node_oh4307350.3 conn=y phases=1 kv=0.12009237875288684 kw=0.836088299751282 kvar=0.0537797771394253 
+new load.350207808 bus1=node_oh4307350.3 conn=y phases=1 kv=0.12009237875288684 kw=0.50227689743042 kvar=0.0323079973459244 
+new load.28039 bus1=node_oh4307350.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350282001 bus1=node_oh4307350.3 conn=y phases=1 kv=0.12009237875288684 kw=0.396205991506577 kvar=0.0254851914942265 
+new load.28335 bus1=node_oh4307349.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350214901 bus1=node_t_3120.2 conn=y phases=1 kv=0.12009237875288684 kw=0.857926309108734 kvar=0.0551844649016857 
+new load.352067604 bus1=node_oh4302621.3 conn=y phases=1 kv=0.12009237875288684 kw=0.149747133255005 kvar=0.00963219720870256 
+new load.152000602 bus1=node_oh4302621.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350312342 bus1=node_oh4302621.3 conn=y phases=1 kv=0.12009237875288684 kw=1.67841553688049 kvar=0.107960857450962 
+new load.150021408 bus1=node_oh4301034.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350274009 bus1=node_oh4301034.3 conn=y phases=1 kv=0.12009237875288684 kw=3.00742149353027 kvar=0.19344662129879 
+new load.350311511 bus1=node_xfmr4301129.3 conn=y phases=1 kv=0.12009237875288684 kw=0.851686835289001 kvar=0.0547831244766712 
+new load.350311627 bus1=node_oh4301152.3 conn=y phases=1 kv=0.12009237875288684 kw=0.889123618602753 kvar=0.0571911707520485 
+new load.150013308 bus1=node_oh4301032.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350278803 bus1=node_oh4301125.3 conn=y phases=1 kv=0.12009237875288684 kw=2.13389658927917 kvar=0.137258812785149 
+new load.350306913 bus1=node_oh4301125.3 conn=y phases=1 kv=0.12009237875288684 kw=0.926560401916504 kvar=0.0595992207527161 
+new load.350105606 bus1=node_oh4301125.3 conn=y phases=1 kv=0.12009237875288684 kw=0.268296986818314 kvar=0.0172576885670424 
+new load.350088108 bus1=node_oh4301125.3 conn=y phases=1 kv=0.12009237875288684 kw=0.811130285263062 kvar=0.0521744005382061 
+new load.350104502 bus1=node_oh4301125.3 conn=y phases=1 kv=0.12009237875288684 kw=0.948398113250732 kvar=0.061003889888525 
+new load.350275803 bus1=node_oh4301162.3 conn=y phases=1 kv=0.12009237875288684 kw=0.595868825912476 kvar=0.038328118622303 
+new load.350200102 bus1=node_oh4301162.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350004303 bus1=node_oh4301162.3 conn=y phases=1 kv=0.12009237875288684 kw=1.0139125585556 kvar=0.0652179792523384 
+new load.28271 bus1=node_oh4301162.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350284802 bus1=node_oh4301180.3 conn=y phases=1 kv=0.12009237875288684 kw=2.63617372512817 kvar=0.169566825032234 
+new load.350245505 bus1=node_oh4301180.3 conn=y phases=1 kv=0.12009237875288684 kw=2.74536395072937 kvar=0.176590278744698 
+new load.419153122 bus1=node_oh4301180.3 conn=y phases=1 kv=0.12009237875288684 kw=0.42116379737854 kvar=0.0270905531942844 
+new load.150020908 bus1=node_oh4301197.3 conn=y phases=1 kv=0.12009237875288684 kw=0.10919065028429 kvar=0.00702347932383418 
+new load.350312755 bus1=node_oh4301197.3 conn=y phases=1 kv=0.12009237875288684 kw=2.89823126792908 kvar=0.186423167586327 
+new load.28098 bus1=node_oh4301221.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.28129 bus1=node_oh4301221.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350209606 bus1=node_oh4301243.1 conn=y phases=1 kv=0.12009237875288684 kw=1.31028735637665 kvar=0.0842817202210426 
+new load.150013901 bus1=node_oh4301243.1 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.150028305 bus1=node_oh4301266.3 conn=y phases=1 kv=0.12009237875288684 kw=0.648904323577881 kvar=0.0417395271360874 
+new load.350256507 bus1=node_oh4301266.3 conn=y phases=1 kv=0.12009237875288684 kw=2.13701605796814 kvar=0.137459456920624 
+new load.150015300 bus1=node_oh4301267.3 conn=y phases=1 kv=0.12009237875288684 kw=0.258937776088715 kvar=0.0166556760668755 
+new load.350144601 bus1=node_oh4301267.3 conn=y phases=1 kv=0.12009237875288684 kw=0.633305668830872 kvar=0.0407361723482609 
+new load.350250800 bus1=node_oh4301267.3 conn=y phases=1 kv=0.12009237875288684 kw=1.43195700645447 kvar=0.092107892036438 
+new load.27993 bus1=node_oh4301271.3 conn=y phases=1 kv=0.12009237875288684 kw=0.302614033222198 kvar=0.0194650683552027 
+new load.150022900 bus1=node_oh4301271.3 conn=y phases=1 kv=0.12009237875288684 kw=1.99974858760834 kvar=0.128629997372627 
+new load.350311570 bus1=node_oh4301271.3 conn=y phases=1 kv=0.12009237875288684 kw=0.879764378070831 kvar=0.0565891563892365 
+new load.150024709 bus1=node_xfmr4301274.3 conn=y phases=1 kv=0.12009237875288684 kw=0.951518595218658 kvar=0.0612046085298061 
+new load.150024806 bus1=node_oh4301296.2 conn=y phases=1 kv=0.12009237875288684 kw=0.511636078357697 kvar=0.0329100079834461 
+new load.28135 bus1=node_oh4301300.3 conn=y phases=1 kv=0.12009237875288684 kw=5.14131879806519 kvar=0.330705463886261 
+new load.28134 bus1=node_oh4301303.1 conn=y phases=1 kv=0.12009237875288684 kw=1.11998414993286 kvar=0.0720408335328102 
+new load.250008603 bus1=node_oh4301303.1 conn=y phases=1 kv=0.12009237875288684 kw=0.496037364006042 kvar=0.0319066531956196 
+new load.350254806 bus1=node_oh4301303.1 conn=y phases=1 kv=0.12009237875288684 kw=0.255817979574203 kvar=0.0164550002664328 
+new load.350309541 bus1=node_oh4301303.1 conn=y phases=1 kv=0.12009237875288684 kw=0.355649441480637 kvar=0.0228764675557613 
+new load.350259603 bus1=node_oh4301315.1 conn=y phases=1 kv=0.12009237875288684 kw=0.0779933035373688 kvar=0.0050167697481811 
+new load.150023400 bus1=node_oh4301315.1 conn=y phases=1 kv=0.12009237875288684 kw=0.249578580260277 kvar=0.0160536635667086 
+new load.150023605 bus1=node_oh4301315.1 conn=y phases=1 kv=0.12009237875288684 kw=0.227740421891212 kvar=0.0146489655598998 
+new load.350294506 bus1=node_oh4301315.1 conn=y phases=1 kv=0.12009237875288684 kw=1.23541390895844 kvar=0.0794656276702881 
+new load.350274505 bus1=node_xfmr4301333.3 conn=y phases=1 kv=0.12009237875288684 kw=0.402445405721664 kvar=0.0258865281939507 
+new load.150019004 bus1=node_oh4301341.3 conn=y phases=1 kv=0.12009237875288684 kw=0.811130285263062 kvar=0.0521744005382061 
+new load.350286503 bus1=node_oh4301341.3 conn=y phases=1 kv=0.12009237875288684 kw=1.05134928226471 kvar=0.067626029253006 
+new load.350295200 bus1=node_oh4301341.3 conn=y phases=1 kv=0.12009237875288684 kw=0.302614033222198 kvar=0.0194650683552027 
+new load.350007108 bus1=node_oh4301365.3 conn=y phases=1 kv=0.12009237875288684 kw=0.970237016677856 kvar=0.0624086372554302 
+new load.27923 bus1=node_oh4301349.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350311633 bus1=node_oh4301349.3 conn=y phases=1 kv=0.12009237875288684 kw=2.20253038406372 kvar=0.141673550009727 
+new load.27922 bus1=node_oh4301349.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.150013103 bus1=node_xfmr4301372.3 conn=y phases=1 kv=0.12009237875288684 kw=1.60354197025299 kvar=0.103144764900208 
+new load.28149 bus1=node_oh4301377.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.27934 bus1=node_oh4301377.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.27935 bus1=node_oh4301377.3 conn=y phases=1 kv=0.12009237875288684 kw=0.639545142650604 kvar=0.0411375164985657 
+new load.27936 bus1=node_oh4301377.3 conn=y phases=1 kv=0.12009237875288684 kw=1.25101292133331 kvar=0.0804690048098564 
+new load.350311692 bus1=node_oh4301377.3 conn=y phases=1 kv=0.12009237875288684 kw=0.857926309108734 kvar=0.0551844649016857 
+new load.27942 bus1=node_oh4301389.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.27943 bus1=node_oh4301389.3 conn=y phases=1 kv=0.12009237875288684 kw=2.90447044372559 kvar=0.186824485659599 
+new load.350140509 bus1=node_xfmr4301395.3 conn=y phases=1 kv=0.12009237875288684 kw=1.3664425611496 kvar=0.0878937989473343 
+new load.350311755 bus1=node_xfmr4301395.3 conn=y phases=1 kv=0.12009237875288684 kw=0.879764378070831 kvar=0.0565891563892365 
+new load.28001 bus1=node_xfmr4301398.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350309210 bus1=node_xfmr4301394.3 conn=y phases=1 kv=0.12009237875288684 kw=1.39763963222504 kvar=0.0899004861712456 
+new load.350312284 bus1=node_xfmr4301394.3 conn=y phases=1 kv=0.12009237875288684 kw=1.22917401790619 kvar=0.0790642648935318 
+new load.150031101 bus1=node_xfmr4301401.3 conn=y phases=1 kv=0.12009237875288684 kw=1.23853313922882 kvar=0.0796662718057632 
+new load.350161808 bus1=node_xfmr4301401.3 conn=y phases=1 kv=0.12009237875288684 kw=1.67529618740082 kvar=0.107760213315487 
+new load.350311710 bus1=node_oh4301399.3 conn=y phases=1 kv=0.12009237875288684 kw=1.69713377952576 kvar=0.109164878726006 
+new load.28028 bus1=node_xfmr4301404.3 conn=y phases=1 kv=0.12009237875288684 kw=1.84688091278076 kvar=0.118797071278095 
+new load.350310520 bus1=node_xfmr4301412.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350312351 bus1=node_xfmr4301412.3 conn=y phases=1 kv=0.12009237875288684 kw=0.246458798646927 kvar=0.015852989628911 
+new load.350238002 bus1=node_xfmr4301414.3 conn=y phases=1 kv=0.12009237875288684 kw=1.94983208179474 kvar=0.125419214367867 
+new load.350169701 bus1=node_oh4301416.3 conn=y phases=1 kv=0.12009237875288684 kw=1.65345823764801 kvar=0.106355533003807 
+new load.308494 bus1=node_oh4301416.3 conn=y phases=1 kv=0.12009237875288684 kw=2.3803551197052 kvar=0.153111785650253 
+new load.28041 bus1=node_oh4301418.3 conn=y phases=1 kv=0.12009237875288684 kw=0.567791283130646 kvar=0.0365220867097378 
+new load.350308491 bus1=node_oh4301418.3 conn=y phases=1 kv=0.12009237875288684 kw=0.38060736656189 kvar=0.0244818385690451 
+new load.150016103 bus1=node_oh4301418.3 conn=y phases=1 kv=0.12009237875288684 kw=1.96231186389923 kvar=0.12622195482254 
+new load.350221207 bus1=node_oh4301418.3 conn=y phases=1 kv=0.12009237875288684 kw=0.396205991506577 kvar=0.0254851914942265 
+new load.350225105 bus1=node_oh4301418.3 conn=y phases=1 kv=0.12009237875288684 kw=1.46939373016357 kvar=0.094515934586525 
+new load.28047 bus1=node_oh4307361.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350309211 bus1=node_oh4307361.3 conn=y phases=1 kv=0.12009237875288684 kw=2.25244688987732 kvar=0.144884333014488 
+new load.350312279 bus1=node_oh4307363.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0967116579413414 kvar=0.00622079195454717 
+new load.350218001 bus1=node_xfmr4307364.3 conn=y phases=1 kv=0.12009237875288684 kw=1.41011917591095 kvar=0.0907032117247581 
+new load.150013309 bus1=node_oh4301431.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350311578 bus1=node_oh4301431.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350247109 bus1=node_oh4301431.3 conn=y phases=1 kv=0.12009237875288684 kw=1.31340670585632 kvar=0.0844823643565178 
+new load.150018008 bus1=node_xfmr4301436.3 conn=y phases=1 kv=0.12009237875288684 kw=1.61914086341858 kvar=0.104148134589195 
+new load.350309233 bus1=node_oh4301449.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350309250 bus1=node_oh4301449.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.250002303 bus1=node_oh4301454.3 conn=y phases=1 kv=0.12009237875288684 kw=0.683221280574799 kvar=0.0439468994736671 
+new load.350311513 bus1=node_oh4301454.3 conn=y phases=1 kv=0.12009237875288684 kw=1.18861782550812 kvar=0.0764555633068085 
+new load.350312308 bus1=node_oh4301454.3 conn=y phases=1 kv=0.12009237875288684 kw=2.90135073661804 kvar=0.186623826622963 
+new load.350311464 bus1=node_oh4301458.3 conn=y phases=1 kv=0.12009237875288684 kw=0.992074728012085 kvar=0.0638133063912392 
+new load.28137 bus1=node_oh4301458.3 conn=y phases=1 kv=0.12009237875288684 kw=2.51138401031494 kvar=0.161539956927299 
+new load.350285507 bus1=node_xfmr4301464.3 conn=y phases=1 kv=0.12009237875288684 kw=1.84688091278076 kvar=0.118797071278095 
+new load.28143 bus1=node_oh4301466.3 conn=y phases=1 kv=0.12009237875288684 kw=1.05134928226471 kvar=0.067626029253006 
+new load.350216807 bus1=node_oh4301466.3 conn=y phases=1 kv=0.12009237875288684 kw=0.948398113250732 kvar=0.061003889888525 
+new load.150014800 bus1=node_oh4301466.3 conn=y phases=1 kv=0.12009237875288684 kw=0.995194137096405 kvar=0.0640139579772949 
+new load.350201400 bus1=node_oh4301466.3 conn=y phases=1 kv=0.12009237875288684 kw=1.53802752494812 kvar=0.0989306718111038 
+new load.350238509 bus1=node_oh4301466.3 conn=y phases=1 kv=0.12009237875288684 kw=0.973356366157532 kvar=0.0626092851161957 
+new load.350311767 bus1=node_oh4307437.3 conn=y phases=1 kv=0.12009237875288684 kw=1.97790968418121 kvar=0.127225250005722 
+new load.350193408 bus1=node_xfmr4307440.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.419154307 bus1=node_oh4307443.3 conn=y phases=1 kv=0.12009237875288684 kw=1.73769104480743 kvar=0.111773647367954 
+new load.350234406 bus1=node_xfmr4307447.3 conn=y phases=1 kv=0.12009237875288684 kw=0.652024030685425 kvar=0.0419401973485947 
+new load.350145500 bus1=node_xfmr4307465.3 conn=y phases=1 kv=0.12009237875288684 kw=2.73288512229919 kvar=0.175787597894669 
+new load.350311670 bus1=node_xfmr4307465.3 conn=y phases=1 kv=0.12009237875288684 kw=1.60978162288666 kvar=0.103546112775803 
+new load.350224702 bus1=node_oh4307472.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350269501 bus1=node_oh4307472.3 conn=y phases=1 kv=0.12009237875288684 kw=0.82984870672226 kvar=0.0533784255385399 
+new load.350207204 bus1=node_oh4301477.3 conn=y phases=1 kv=0.12009237875288684 kw=1.00143396854401 kvar=0.0644153207540512 
+new load.27970 bus1=node_oh4301477.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350264003 bus1=node_oh4301477.3 conn=y phases=1 kv=0.12009237875288684 kw=1.17613935470581 kvar=0.0756529122591019 
+new load.350311615 bus1=node_oh4301477.3 conn=y phases=1 kv=0.12009237875288684 kw=0.508516371250153 kvar=0.0327093414962292 
+new load.419156429 bus1=node_oh4301477.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350134002 bus1=node_oh4301480.3 conn=y phases=1 kv=0.12009237875288684 kw=0.00311973178759217 kvar=0.000200670765480027 
+new load.350267002 bus1=node_oh4301480.3 conn=y phases=1 kv=0.12009237875288684 kw=1.66281747817993 kvar=0.106957547366619 
+new load.27973 bus1=node_oh4301480.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.27887 bus1=node_oh4301480.3 conn=y phases=1 kv=0.12009237875288684 kw=5.69351148605347 kvar=0.366224199533463 
+new load.28279 bus1=node_oh4301480.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350267003 bus1=node_oh4301480.3 conn=y phases=1 kv=0.12009237875288684 kw=0.134148448705673 kvar=0.00862884148955345 
+new load.27886 bus1=node_oh4301483.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350084404 bus1=node_oh4301483.3 conn=y phases=1 kv=0.12009237875288684 kw=1.74705040454865 kvar=0.112375669181347 
+new load.150012700 bus1=node_oh4301487.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350205503 bus1=node_oh4301487.3 conn=y phases=1 kv=0.12009237875288684 kw=1.48811221122742 kvar=0.095719963312149 
+new load.350312327 bus1=node_oh4301487.3 conn=y phases=1 kv=0.12009237875288684 kw=0.268296986818314 kvar=0.0172576885670424 
+new load.350167709 bus1=node_oh4301487.3 conn=y phases=1 kv=0.12009237875288684 kw=0.268296986818314 kvar=0.0172576885670424 
+new load.350311514 bus1=node_oh4301487.3 conn=y phases=1 kv=0.12009237875288684 kw=0.53035444021225 kvar=0.0341140329837799 
+new load.350311747 bus1=node_oh4301487.3 conn=y phases=1 kv=0.12009237875288684 kw=0.330691635608673 kvar=0.0212711058557034 
+new load.350312240 bus1=node_oh4301489.3 conn=y phases=1 kv=0.12009237875288684 kw=2.28988361358643 kvar=0.147292375564575 
+new load.27983 bus1=node_oh4301489.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350311860 bus1=node_oh4301489.3 conn=y phases=1 kv=0.12009237875288684 kw=0.758094847202301 kvar=0.048762995749712 
+new load.350265409 bus1=node_xfmr4301493.3 conn=y phases=1 kv=0.12009237875288684 kw=0.19342340528965 kvar=0.0124415894970298 
+new load.27959 bus1=node_xfmr4300831.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.27962 bus1=node_xfmr4300831.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350001606 bus1=node_xfmr4300831.3 conn=y phases=1 kv=0.12009237875288684 kw=1.09814524650574 kvar=0.070636086165905 
+new load.27956 bus1=node_xfmr4307447.3 conn=y phases=1 kv=0.12009237875288684 kw=0.574030697345734 kvar=0.036923423409462 
+new load.27949 bus1=node_xfmr4307431.3 conn=y phases=1 kv=0.12009237875288684 kw=2.46770834922791 kvar=0.158730611205101 
+new load.28091 bus1=node_oh4307415.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350166508 bus1=node_oh4307415.3 conn=y phases=1 kv=0.12009237875288684 kw=2.04654455184937 kvar=0.131640046834946 
+new load.350225601 bus1=node_oh4307415.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350309249 bus1=node_oh4307415.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0717538297176361 kvar=0.00461542746052146 
+new load.350311569 bus1=node_oh4307415.3 conn=y phases=1 kv=0.12009237875288684 kw=0.171585232019424 kvar=0.011036891490221 
+new load.28087 bus1=node_oh4307415.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.28088 bus1=node_oh4307415.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350219709 bus1=node_oh4307415.3 conn=y phases=1 kv=0.12009237875288684 kw=1.65969705581665 kvar=0.106756828725338 
+new load.350311769 bus1=node_oh4307402.3 conn=y phases=1 kv=0.12009237875288684 kw=1.29156899452209 kvar=0.0830776989459991 
+new load.350312756 bus1=node_xfmr4307405.3 conn=y phases=1 kv=0.12009237875288684 kw=1.50683057308197 kvar=0.0969239845871925 
+new load.350311660 bus1=node_xfmr4307408.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.330132124 bus1=node_xfmr4307408.3 conn=y phases=1 kv=0.12009237875288684 kw=1.41635799407959 kvar=0.0911045148968697 
+new load.350098200 bus1=node_oh4301438.3 conn=y phases=1 kv=0.12009237875288684 kw=0.779933094978333 kvar=0.0501677021384239 
+new load.350213905 bus1=node_oh4307388.3 conn=y phases=1 kv=0.12009237875288684 kw=0.414924383163452 kvar=0.0266892146319151 
+new load.350206208 bus1=node_oh4307388.3 conn=y phases=1 kv=0.12009237875288684 kw=0.474199295043945 kvar=0.0305019598454237 
+new load.350310506 bus1=node_oh4307388.3 conn=y phases=1 kv=0.12009237875288684 kw=1.11686360836029 kvar=0.0718401074409485 
+new load.350110901 bus1=node_oh4307391.3 conn=y phases=1 kv=0.12009237875288684 kw=1.07006776332855 kvar=0.0688300579786301 
+new load.350150105 bus1=node_xfmr4303057.3 conn=y phases=1 kv=0.12009237875288684 kw=2.10581922531128 kvar=0.135452777147293 
+new load.350313626 bus1=node_xfmr4303058.3 conn=y phases=1 kv=0.12009237875288684 kw=0.374367833137512 kvar=0.0240804925560951 
+new load.350106203 bus1=node_oh4307365.3 conn=y phases=1 kv=0.12009237875288684 kw=3.10101342201233 kvar=0.199466735124588 
+new load.350311607 bus1=node_oh4307365.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0124789252877235 kvar=0.000802682945504785 
+new load.350308519 bus1=node_oh4307369.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350311598 bus1=node_oh4307373.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350275404 bus1=node_oh4307373.3 conn=y phases=1 kv=0.12009237875288684 kw=2.12141799926758 kvar=0.136456146836281 
+new load.350311877 bus1=node_oh4307378.3 conn=y phases=1 kv=0.12009237875288684 kw=1.58794391155243 kvar=0.102141447365284 
+new load.350313379 bus1=node_xfmr4307339.3 conn=y phases=1 kv=0.12009237875288684 kw=1.89991664886475 kvar=0.122208498418331 
+new load.150013502 bus1=node_oh4307344.3 conn=y phases=1 kv=0.12009237875288684 kw=0.695700347423553 kvar=0.044749591499567 
+new load.150028704 bus1=node_xfmr4307330.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350272502 bus1=node_xfmr4307330.3 conn=y phases=1 kv=0.12009237875288684 kw=1.24477303028107 kvar=0.0800676420331001 
+new load.150025500 bus1=node_oh4301325.2 conn=y phases=1 kv=0.12009237875288684 kw=0.405565202236176 kvar=0.0260872039943933 
+new load.350254504 bus1=node_oh4301325.2 conn=y phases=1 kv=0.12009237875288684 kw=0.589629352092743 kvar=0.0379267781972885 
+new load.150023206 bus1=node_oh4301325.2 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.217447804 bus1=node_oh4301325.2 conn=y phases=1 kv=0.12009237875288684 kw=0.1903036236763 kvar=0.0122409155592322 
+new load.350095201 bus1=node_oh4301325.2 conn=y phases=1 kv=0.12009237875288684 kw=0.564671516418457 kvar=0.0363214127719402 
+new load.350217501 bus1=node_oh4301325.2 conn=y phases=1 kv=0.12009237875288684 kw=3.27259874343872 kvar=0.21050363779068 
+new load.350309226 bus1=node_oh4301289.1 conn=y phases=1 kv=0.12009237875288684 kw=1.81880342960358 kvar=0.11699104309082 
+new load.350312321 bus1=node_oh4301289.1 conn=y phases=1 kv=0.12009237875288684 kw=0.574030697345734 kvar=0.036923423409462 
+new load.350145306 bus1=node_xfmr4301258.1 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350311568 bus1=node_xfmr4301258.1 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.28262 bus1=node_xfmr4301258.1 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350311478 bus1=node_oh4301259.1 conn=y phases=1 kv=0.12009237875288684 kw=2.95438623428345 kvar=0.190035223960876 
+new load.350287305 bus1=node_oh4301154.2 conn=y phases=1 kv=0.12009237875288684 kw=0.907842040061951 kvar=0.0583951994776726 
+new load.350091001 bus1=node_xfmr4301151.2 conn=y phases=1 kv=0.12009237875288684 kw=2.08086085319519 kvar=0.133847385644913 
+new load.350119208 bus1=node_xfmr4301151.2 conn=y phases=1 kv=0.12009237875288684 kw=0.730017244815826 kvar=0.0469569601118565 
+new load.150012506 bus1=node_xfmr4307823.1 conn=y phases=1 kv=0.12009237875288684 kw=0.574030697345734 kvar=0.036923423409462 
+new load.350278802 bus1=node_xfmr4307823.1 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350234600 bus1=node_oh4301822.1 conn=y phases=1 kv=0.12009237875288684 kw=0.3868468105793 kvar=0.0248831789940596 
+new load.350176201 bus1=node_oh4301822.1 conn=y phases=1 kv=0.12009237875288684 kw=0.854806661605835 kvar=0.0549837984144688 
+new load.350245009 bus1=node_xfmr4301827.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350312758 bus1=node_xfmr4301827.3 conn=y phases=1 kv=0.12009237875288684 kw=0.736256778240204 kvar=0.0473583042621613 
+new load.350306907 bus1=node_oh4301850.3 conn=y phases=1 kv=0.12009237875288684 kw=0.577150464057922 kvar=0.0371240973472595 
+new load.217167909 bus1=node_oh4301850.3 conn=y phases=1 kv=0.12009237875288684 kw=0.336931049823761 kvar=0.0216724444180727 
+new load.350120303 bus1=node_oh4301850.3 conn=y phases=1 kv=0.12009237875288684 kw=0.53035444021225 kvar=0.0341140329837799 
+new load.28007 bus1=node_xfmr4301854.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.150013707 bus1=node_oh4301859.3 conn=y phases=1 kv=0.12009237875288684 kw=0.233979895710945 kvar=0.0150503078475595 
+new load.350112408 bus1=node_oh4301859.3 conn=y phases=1 kv=0.12009237875288684 kw=1.37580180168152 kvar=0.0884958133101463 
+new load.350189303 bus1=node_oh4301859.3 conn=y phases=1 kv=0.12009237875288684 kw=0.118549846112728 kvar=0.00762549135833979 
+new load.350268602 bus1=node_oh4301859.3 conn=y phases=1 kv=0.12009237875288684 kw=0.302614033222198 kvar=0.0194650683552027 
+new load.350309228 bus1=node_oh4301859.3 conn=y phases=1 kv=0.12009237875288684 kw=1.77200734615326 kvar=0.11398097127676 
+new load.350226209 bus1=node_xfmr4301864.1 conn=y phases=1 kv=0.12009237875288684 kw=1.16365969181061 kvar=0.0748501792550087 
+new load.350312128 bus1=node_oh4301883.3 conn=y phases=1 kv=0.12009237875288684 kw=0.714418709278107 kvar=0.0459536127746105 
+new load.352069305 bus1=node_xfmr4301888.1.2.3 conn=y phases=3 kv=0.24 kw=0.0405565118417145 kvar=0.0026087198057211927 
+new load.352068902 bus1=node_xfmr4302606.1 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.28371 bus1=node_oh4301968.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.352068805 bus1=node_oh4301968.3 conn=y phases=1 kv=0.12009237875288684 kw=1.204216837883 kvar=0.0774589404463768 
+new load.152000408 bus1=node_oh4301965.3 conn=y phases=1 kv=0.12009237875288684 kw=5.45953130722046 kvar=0.351173877716064 
+new load.150031500 bus1=node_oh4301984.3 conn=y phases=1 kv=0.12009237875288684 kw=0.46795979142189 kvar=0.0301006156951189 
+new load.150031608 bus1=node_oh4301984.3 conn=y phases=1 kv=0.12009237875288684 kw=1.08254730701447 kvar=0.0696327835321426 
+new load.350215509 bus1=node_oh4301984.3 conn=y phases=1 kv=0.12009237875288684 kw=0.545953154563904 kvar=0.0351173914968967 
+new load.35308485 bus1=node_oh4301984.3 conn=y phases=1 kv=0.12009237875288684 kw=1.56298565864563 kvar=0.100536055862904 
+new load.350311590 bus1=node_oh4301984.3 conn=y phases=1 kv=0.12009237875288684 kw=0.365008622407913 kvar=0.0234784800559282 
+new load.152001803 bus1=node_xfmr4302009.3 conn=y phases=1 kv=0.12009237875288684 kw=0.258937776088715 kvar=0.0166556760668755 
+new load.150016900 bus1=node_xfmr4302009.3 conn=y phases=1 kv=0.12009237875288684 kw=4.60784435272217 kvar=0.296390742063522 
+new load.150024008 bus1=node_oh4302016.3 conn=y phases=1 kv=0.12009237875288684 kw=0.577150464057922 kvar=0.0371240973472595 
+new load.150030504 bus1=node_oh4302016.3 conn=y phases=1 kv=0.12009237875288684 kw=1.12310349941254 kvar=0.0722414776682854 
+new load.350143907 bus1=node_oh4302016.3 conn=y phases=1 kv=0.12009237875288684 kw=0.652024030685425 kvar=0.0419401973485947 
+new load.350141203 bus1=node_oh4302026.3 conn=y phases=1 kv=0.12009237875288684 kw=0.443001985549927 kvar=0.0284952539950609 
+new load.150025306 bus1=node_xfmr4302028.3 conn=y phases=1 kv=0.12009237875288684 kw=1.44755601882935 kvar=0.0931112617254257 
+new load.150027309 bus1=node_xfmr4302028.3 conn=y phases=1 kv=0.12009237875288684 kw=0.59898853302002 kvar=0.0385287888348103 
+new load.152000300 bus1=node_xfmr4302028.3 conn=y phases=1 kv=0.12009237875288684 kw=0.449241399765015 kvar=0.0288965925574303 
+new load.350312295 bus1=node_xfmr4302028.3 conn=y phases=1 kv=0.12009237875288684 kw=0.115430057048798 kvar=0.00742481695488095 
+new load.350201303 bus1=node_oh4302030.3 conn=y phases=1 kv=0.12009237875288684 kw=1.71897256374359 kvar=0.11056961119175 
+new load.350250908 bus1=node_oh4302030.3 conn=y phases=1 kv=0.12009237875288684 kw=0.511636078357697 kvar=0.0329100079834461 
+new load.152001102 bus1=node_oh4302030.3 conn=y phases=1 kv=0.12009237875288684 kw=2.09021997451782 kvar=0.134449392557144 
+new load.352069801 bus1=node_oh4302030.3 conn=y phases=1 kv=0.12009237875288684 kw=0.795531630516052 kvar=0.0511710457503796 
+new load.352070206 bus1=node_oh4302030.3 conn=y phases=1 kv=0.12009237875288684 kw=0.00311973178759217 kvar=0.000200670765480027 
+new load.150025608 bus1=node_oh4302030.3 conn=y phases=1 kv=0.12009237875288684 kw=1.28532922267914 kvar=0.0826763361692429 
+new load.350224303 bus1=node_oh4302030.3 conn=y phases=1 kv=0.12009237875288684 kw=0.836088299751282 kvar=0.0537797771394253 
+new load.350114907 bus1=node_oh4302030.3 conn=y phases=1 kv=0.12009237875288684 kw=2.055903673172 kvar=0.132242068648338 
+new load.350311540 bus1=node_xfmr4300058.2 conn=y phases=1 kv=0.12009237875288684 kw=0.907842040061951 kvar=0.0583951994776726 
+new load.350311497 bus1=node_oh4301988.2 conn=y phases=1 kv=0.12009237875288684 kw=1.60354197025299 kvar=0.103144764900208 
+new load.350308518 bus1=node_oh4301988.2 conn=y phases=1 kv=0.12009237875288684 kw=2.02470564842224 kvar=0.130235314369202 
+new load.350312336 bus1=node_oh4301995.2 conn=y phases=1 kv=0.12009237875288684 kw=1.11062502861023 kvar=0.0714388266205788 
+new load.150024504 bus1=node_oh4301995.2 conn=y phases=1 kv=0.12009237875288684 kw=0.832968473434448 kvar=0.0535790994763374 
+new load.350311450 bus1=node_oh4301995.2 conn=y phases=1 kv=0.12009237875288684 kw=0.926560401916504 kvar=0.0595992207527161 
+new load.350161301 bus1=node_oh4302000.2 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350311694 bus1=node_oh4302000.2 conn=y phases=1 kv=0.12009237875288684 kw=1.41635799407959 kvar=0.0911045148968697 
+new load.150024202 bus1=node_xfmr4301947.2 conn=y phases=1 kv=0.12009237875288684 kw=1.18237805366516 kvar=0.0760542005300522 
+new load.350275307 bus1=node_xfmr4301947.2 conn=y phases=1 kv=0.12009237875288684 kw=0.505396604537964 kvar=0.0325086675584316 
+new load.250006708 bus1=node_oh4301894.1 conn=y phases=1 kv=0.12009237875288684 kw=0.92344069480896 kvar=0.0593985505402088 
+new load.350264909 bus1=node_oh4301829.3 conn=y phases=1 kv=0.12009237875288684 kw=1.67841553688049 kvar=0.107960857450962 
+new load.350311575 bus1=node_oh4301829.3 conn=y phases=1 kv=0.12009237875288684 kw=1.28532922267914 kvar=0.0826763361692429 
+new load.350311638 bus1=node_t14151.3 conn=y phases=1 kv=0.12009237875288684 kw=2.2306079864502 kvar=0.143479585647583 
+new load.350312291 bus1=node_xfmr4301548.3 conn=y phases=1 kv=0.12009237875288684 kw=0.327571839094162 kvar=0.0210704300552607 
+new load.28241 bus1=node_xfmr4301548.3 conn=y phases=1 kv=0.12009237875288684 kw=0.820489525794983 kvar=0.0527764149010181 
+new load.28242 bus1=node_xfmr4301548.3 conn=y phases=1 kv=0.12009237875288684 kw=2.2181293964386 kvar=0.142676919698715 
+new load.28289 bus1=node_oh4301037.3 conn=y phases=1 kv=0.12009237875288684 kw=0.708179235458374 kvar=0.045552272349596 
+new load.150012603 bus1=node_oh4301037.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.28104 bus1=node_oh4301047.3 conn=y phases=1 kv=0.12009237875288684 kw=1.82192397117615 kvar=0.117191769182682 
+new load.150029506 bus1=node_oh4301047.3 conn=y phases=1 kv=0.12009237875288684 kw=1.69401443004608 kvar=0.10896422713995 
+new load.350109601 bus1=node_xfmr4301514.3 conn=y phases=1 kv=0.12009237875288684 kw=0.517875552177429 kvar=0.0333113521337509 
+new load.350117000 bus1=node_xfmr4301514.3 conn=y phases=1 kv=0.12009237875288684 kw=0.414924383163452 kvar=0.0266892146319151 
+new load.150020207 bus1=node_xfmr4301514.3 conn=y phases=1 kv=0.12009237875288684 kw=0.227740421891212 kvar=0.0146489655598998 
+new load.28167 bus1=node_oh4301077.3 conn=y phases=1 kv=0.12009237875288684 kw=1.15118110179901 kvar=0.0740475207567215 
+new load.28165 bus1=node_oh4301077.3 conn=y phases=1 kv=0.12009237875288684 kw=0.864165842533112 kvar=0.0555858090519905 
+new load.150023702 bus1=node_oh4301077.3 conn=y phases=1 kv=0.12009237875288684 kw=0.62394642829895 kvar=0.0401341579854488 
+new load.419151921 bus1=node_oh4301079.3 conn=y phases=1 kv=0.12009237875288684 kw=1.50683057308197 kvar=0.0969239845871925 
+new load.350311585 bus1=node_xfmr4301519.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350223803 bus1=node_oh4301092.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.150028003 bus1=node_oh4301092.3 conn=y phases=1 kv=0.12009237875288684 kw=0.511636078357697 kvar=0.0329100079834461 
+new load.350219008 bus1=node_oh4301092.3 conn=y phases=1 kv=0.12009237875288684 kw=3.03861904144287 kvar=0.195453345775604 
+new load.350277202 bus1=node_oh4301095.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0187183916568756 kvar=0.00120402465108782 
+new load.350309206 bus1=node_oh4301099.3 conn=y phases=1 kv=0.12009237875288684 kw=2.28052449226379 kvar=0.146690368652344 
+new load.350103107 bus1=node_oh4301099.3 conn=y phases=1 kv=0.12009237875288684 kw=0.00935919582843781 kvar=0.00060201232554391 
+new load.350311517 bus1=node_oh4301099.3 conn=y phases=1 kv=0.12009237875288684 kw=0.539713680744171 kvar=0.0347160473465919 
+new load.150015203 bus1=node_oh4301108.3 conn=y phases=1 kv=0.12009237875288684 kw=0.121669545769691 kvar=0.00782616063952446 
+new load.350311630 bus1=node_oh4301108.3 conn=y phases=1 kv=0.12009237875288684 kw=0.520995259284973 kvar=0.0335120223462582 
+new load.150020304 bus1=node_oh4301108.3 conn=y phases=1 kv=0.12009237875288684 kw=1.22605466842651 kvar=0.078863613307476 
+new load.350219903 bus1=node_oh4301120.3 conn=y phases=1 kv=0.12009237875288684 kw=1.42571711540222 kvar=0.0917065218091011 
+new load.350091702 bus1=node_oh4301122.3 conn=y phases=1 kv=0.12009237875288684 kw=0.754975140094757 kvar=0.048562329262495 
+new load.350309241 bus1=node_oh4301122.3 conn=y phases=1 kv=0.12009237875288684 kw=0.873525083065033 kvar=0.0561878271400928 
+new load.150020002 bus1=node_xfmr4301126.3 conn=y phases=1 kv=0.12009237875288684 kw=0.499157160520554 kvar=0.0321073271334171 
+new load.350311581 bus1=node_xfmr4301126.3 conn=y phases=1 kv=0.12009237875288684 kw=0.74561595916748 kvar=0.0479603186249733 
+new load.350156405 bus1=node_xfmr4301126.3 conn=y phases=1 kv=0.12009237875288684 kw=0.396205991506577 kvar=0.0254851914942265 
+new load.350260504 bus1=node_oh4301116.3 conn=y phases=1 kv=0.12009237875288684 kw=2.49266576766968 kvar=0.160335943102837 
+new load.150019705 bus1=node_oh4301116.3 conn=y phases=1 kv=0.12009237875288684 kw=0.271416693925858 kvar=0.0174583587795496 
+new load.250005507 bus1=node_xfmr4301140.3 conn=y phases=1 kv=0.12009237875288684 kw=1.28532922267914 kvar=0.0826763361692429 
+new load.350311477 bus1=node_xfmr4301140.3 conn=y phases=1 kv=0.12009237875288684 kw=2.11517810821533 kvar=0.136054769158363 
+new load.28249 bus1=node_oh4301142.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350311610 bus1=node_oh4301142.3 conn=y phases=1 kv=0.12009237875288684 kw=0.892243444919586 kvar=0.0573918484151363 
+new load.350306922 bus1=node_oh4301147.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0218381211161613 kvar=0.00140469521284103 
+new load.350078404 bus1=node_oh4301146.3 conn=y phases=1 kv=0.12009237875288684 kw=0.917201161384583 kvar=0.058997206389904 
+new load.150019802 bus1=node_oh4301146.3 conn=y phases=1 kv=0.12009237875288684 kw=0.848567068576813 kvar=0.0545824505388737 
+new load.350294603 bus1=node_oh4301146.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350308513 bus1=node_oh4301146.3 conn=y phases=1 kv=0.12009237875288684 kw=1.18861782550812 kvar=0.0764555633068085 
+new load.150030105 bus1=node_oh4301158.3 conn=y phases=1 kv=0.12009237875288684 kw=0.205902293324471 kvar=0.0132442703470588 
+new load.250003903 bus1=node_oh4301158.3 conn=y phases=1 kv=0.12009237875288684 kw=1.53490817546844 kvar=0.0987300276756287 
+new load.28109 bus1=node_oh4301158.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350311467 bus1=node_oh4301161.3 conn=y phases=1 kv=0.12009237875288684 kw=1.08566677570343 kvar=0.0698334351181984 
+new load.350311468 bus1=node_oh4301161.3 conn=y phases=1 kv=0.12009237875288684 kw=1.88119840621948 kvar=0.121004477143288 
+new load.350311469 bus1=node_oh4301161.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0592749044299126 kvar=0.00381274451501667 
+new load.350292309 bus1=node_oh4301165.3 conn=y phases=1 kv=0.12009237875288684 kw=0.545953154563904 kvar=0.0351173914968967 
+new load.350001509 bus1=node_oh4301165.3 conn=y phases=1 kv=0.12009237875288684 kw=1.13246262073517 kvar=0.0728434845805168 
+new load.350004702 bus1=node_oh4301165.3 conn=y phases=1 kv=0.12009237875288684 kw=0.795531630516052 kvar=0.0511710457503796 
+new load.150020509 bus1=node_oh4301172.3 conn=y phases=1 kv=0.12009237875288684 kw=1.74392986297607 kvar=0.112174943089485 
+new load.350215606 bus1=node_oh4301172.3 conn=y phases=1 kv=0.12009237875288684 kw=0.770573914051056 kvar=0.0495656877756119 
+new load.350103301 bus1=node_oh4301189.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0311973169445992 kvar=0.00200670748017728 
+new load.350149107 bus1=node_oh4301189.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0748735666275024 kvar=0.00481609860435128 
+new load.350311504 bus1=node_oh4301189.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0249578598886728 kvar=0.00160536647308618 
+new load.350311715 bus1=node_t18424.3 conn=y phases=1 kv=0.12009237875288684 kw=0.302614033222198 kvar=0.0194650683552027 
+new load.350281501 bus1=node_xfmr4301212.3 conn=y phases=1 kv=0.12009237875288684 kw=1.07630753517151 kvar=0.0692314207553864 
+new load.350311545 bus1=node_xfmr4301212.3 conn=y phases=1 kv=0.12009237875288684 kw=0.667622745037079 kvar=0.0429435521364212 
+new load.350311550 bus1=node_xfmr4301212.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.28189 bus1=node_xfmr4301212.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350083408 bus1=node_xfmr4301222.3 conn=y phases=1 kv=0.12009237875288684 kw=3.01054167747498 kvar=0.19364732503891 
+new load.28111 bus1=node_oh4301229.3 conn=y phases=1 kv=0.12009237875288684 kw=3.04797840118408 kvar=0.196055367588997 
+new load.28112 bus1=node_oh4301229.3 conn=y phases=1 kv=0.12009237875288684 kw=0.159106329083443 kvar=0.0102342097088695 
+new load.28226 bus1=node_oh4301229.3 conn=y phases=1 kv=0.12009237875288684 kw=0.131028741598129 kvar=0.00842817220836878 
+new load.28232 bus1=node_oh4301238.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.150012301 bus1=node_oh4301238.3 conn=y phases=1 kv=0.12009237875288684 kw=0.963997185230255 kvar=0.0620072707533836 
+new load.350312364 bus1=node_oh4301242.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350311593 bus1=node_oh4301242.3 conn=y phases=1 kv=0.12009237875288684 kw=1.8032054901123 kvar=0.115987733006477 
+new load.350309238 bus1=node_oh4301244.3 conn=y phases=1 kv=0.12009237875288684 kw=2.26180601119995 kvar=0.14548633992672 
+new load.350308812 bus1=node_xfmr4301228.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.150021904 bus1=node_oh4301205.3 conn=y phases=1 kv=0.12009237875288684 kw=0.00623946404084563 kvar=0.000401341560063884 
+new load.150021505 bus1=node_oh4301205.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0 kvar=0.0 
+new load.350279205 bus1=node_oh4301205.3 conn=y phases=1 kv=0.12009237875288684 kw=1.36956191062927 kvar=0.0880944430828094 
+new load.350308493 bus1=node_oh4301205.3 conn=y phases=1 kv=0.12009237875288684 kw=1.97790968418121 kvar=0.127225250005722 
+new load.150031209 bus1=node_xfmr4301187.3 conn=y phases=1 kv=0.12009237875288684 kw=0.59898853302002 kvar=0.0385287888348103 
+new load.350311689 bus1=node_oh4301049.3 conn=y phases=1 kv=0.12009237875288684 kw=5.31290340423584 kvar=0.341742336750031 
+new load.150028607 bus1=node_oh4301057.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0748735666275024 kvar=0.00481609860435128 
+new load.350280408 bus1=node_oh4301057.3 conn=y phases=1 kv=0.12009237875288684 kw=1.55986642837524 kvar=0.100335419178009 
+new load.350312173 bus1=node_oh4301042.3 conn=y phases=1 kv=0.12009237875288684 kw=0.680101633071899 kvar=0.0437462329864502 
+new load.350313344 bus1=node_xfmr4301164.3 conn=y phases=1 kv=0.12009237875288684 kw=1.63473963737488 kvar=0.105151489377022 
+new load.600139970 bus1=node_xfmr4301967.1.2.3 conn=y phases=3 kv=0.24 kw=3.5564943552017096 kvar=0.22876469045877448 
+new load.350313003 bus1=node_xfmr4301128.3 conn=y phases=1 kv=0.12009237875288684 kw=0.0124789252877235 kvar=0.000802682945504785 
+
+!Creating energy meter
+
+New Energymeter.FeederMeter Line.oh4301501
+
+
+!Calculating voltage bases
+Set voltagebases=[12.47, 7.2, .24, 0.208, 0.12]
+
+Calcv
+
+BusCoords Bus_Coordinates.csv
+
+solve
+
+plot circuit
+
+plot profile
+

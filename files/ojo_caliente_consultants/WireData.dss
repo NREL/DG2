@@ -1,0 +1,16 @@
+new wiredata.500-mcm-25kv-jacc normamps=680 gmrac=0.0260300002992153 gmrunits=ft diam=0.145 radunits=ft rac=0.2112 runits=mi 
+ !! AJC llines
+new wiredata.#1/0-25kv-jac normamps=242 gmrac=0.012912 gmrunits=ft diam=0.03316 radunits=ft rac=0.8622 runits=mi !1.13
+new wiredata.#4/0-25kv-jac normamps=357 gmrac=0.01828234 gmrunits=ft diam=0.046948819 radunits=ft rac=0.43401 runits=mi !0.6101
+new wiredata.#4/0-25kvjac normamps=357 gmrac=0.01828234 gmrunits=ft diam=0.046948819 radunits=ft rac=0.43401 runits=mi !0.6101
+! ACSR Lines
+new wiredata.#1/0-acsr-6/1 normamps=242 gmrac=0.012912 gmrunits=ft diam=0.03316 radunits=ft rac=0.8622 runits=mi !1.13
+new wiredata.acsr-#1/0 normamps=242 gmrac=0.0129125 gmrunits=ft diam=0.03316 radunits=ft rac=0.8622 runits=mi !1.13
+new wiredata.#2-acsr-6/1 normamps=184 gmrac=0.0103463 gmrunits=ft diam=0.0265748 radunits=ft rac=1.353 runits=mi !1.65
+new wiredata.#4-acsr-6/1 normamps=140 gmrac=0.00812678 gmrunits=ft diam=0.02086614 radunits=ft rac=2.1748 runits=mi !2.755
+new wiredata.#4-acsr-7/1 normamps=140 gmrac=0.00834095 gmrunits=ft diam=0.02142388 radunits=ft rac=2.1062 runits=mi ! 2.73
+new wiredata.#4/0-acsr-6/1 normamps=357 gmrac=0.01828234 gmrunits=ft diam=0.046948819 radunits=ft rac=0.43401 runits=mi !0.6101
+
+new wiredata.none normamps=184 gmrac=0.0103463 gmrunits=ft diam=0.0265748 radunits=ft rac=1.353 runits=mi !Assuming this to be 2
+new wiredata.4a-cwc normamps=180 gmrac=0.00604 gmrunits=ft diam=0.01551 radunits=ft rac=1.545 runits=mi 
+new wiredata.trip-#1/0 normamps=242 gmrac=0.012912 gmrunits=ft diam=0.03316 radunits=ft rac=0.8622 runits=mi !1.13 

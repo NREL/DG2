@@ -1,0 +1,8 @@
+! new transformer.xfmr4303201 buses=[node_oh4301003.1.2.3 node_xfmr4303201.1.2.3] xfmrcode=500-kva-step-1ph 
+! new transformer.xfmr4302741 buses=[node_oh4303122.3 node_xfmr4302741.3] xfmrcode=50-kva-1ph 
+! new transformer.t_3_34_60_4_0001 buses=[node_oh4300162.1.2.3 node_t_3_34_60_4_0001.1.2.3] xfmrcode=500-kva-step-1ph 
+
+new line.xfmr4303201 bus1=node_oh4301003.1.2.3 bus2=node_xfmr4303201.1.2.3 switch=y length=0.001 units=ft enabled=true phases=3 
+new line.xfmr4302741 bus1=node_oh4303122.3 bus2=node_xfmr4302741.3 switch=y length=0.001 units=ft enabled=true phases=1 
+new line.t_3_34_60_4_0001 bus1=node_oh4300162.1.2.3 bus2=node_t_3_34_60_4_0001.1.2.3 switch=y length=0.001 units=ft enabled=true phases=3 
+

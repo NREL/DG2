@@ -1,0 +1,19 @@
+new wiredata.500-mcm-25kv-jacc normamps=690 gmrac=0.0310999993234873 gmrunits=ft radius=0.073326772 radunits=ft rac=0.206000000238419 runits=mi 
+new wiredata.#4/0-25kvjac normamps=300 gmrac=0.0191670004278421 gmrunits=ft radius=0.01916666701436045 radunits=ft rac=0.527999997138977 runits=mi 
+new wiredata.#2-acsr-6/1 normamps=180 gmrac=0.00418000016361475 gmrunits=ft radius=0.1580000072717665 radunits=ft rac=1.69000005722046 runits=mi 
+new wiredata.#4-acsr-7/1 normamps=140 gmrac=0.00812678 gmrunits=ft diam=0.02086614 radunits=ft rac=2.1748 runits=mi !2.755
+new wiredata.#1/0-acsr-6/1 normamps=230 gmrac=0.00445999996736646 gmrunits=ft radius=0.1990000009536745 radunits=ft rac=1.12000000476837 runits=mi 
+new wiredata.#1/0-25kv-jac normamps=189 gmrac=0.00992000009864569 gmrunits=ft radius=0.0136666502803564 radunits=ft rac=1.3991999626159701 runits=mi 
+new wiredata.none  normamps=168 gmrac=0.0088299997150898 gmrunits=ft radius=0.00405833497643471 radunits=ft rac=1.7635200023651103 runits=mi 
+new wiredata.#4-acsr-6/1 normamps=140 gmrac=0.00437000021338463 gmrunits=ft radius=0.125 radunits=ft rac=2.5699999332428 runits=mi 
+new wiredata.4a-cwc normamps=180 gmrac=0.00604 gmrunits=ft diam=0.01551 radunits=ft rac=1.545 runits=mi 
+new wiredata.#4/0-acsr-6/1 normamps=340 gmrac=0.00813999958336353 gmrunits=ft radius=0.2815000116825105 radunits=ft rac=0.592000007629395 runits=mi 
+new wiredata.#4/0-25kv-jac  normamps=357 gmrac=0.01828234 gmrunits=ft diam=0.046948819 radunits=ft rac=0.43401 runits=mi !0.6101
+new wiredata.trip-#1/0 normamps=200 gmrac=0.0148750003427267 gmrunits=ft radius=0.17849999666214 radunits=ft rac=0.969936013221741 runits=mi 
+new wiredata.dup-#6 normamps=70 gmrac=0.00437000021338463 gmrunits=ft radius=0.125 radunits=ft rac=3.5699999332428 runits=mi 
+new wiredata.#4/0-trip-600a normamps=357 gmrac=0.01828234 gmrunits=ft diam=0.046948819 radunits=ft rac=0.43401 runits=mi !0.6101
+new wiredata.trip-#2ser normamps=184 gmrac=0.0103463 gmrunits=ft diam=0.0265748 radunits=ft rac=1.353 runits=mi !1.65
+new wiredata.trip-#2/0 normamps=150 gmrac=0.0117920003831387 gmrunits=ft radius=0.1414999961853025 radunits=ft rac=1.54651200771332 runits=mi 
+new wiredata.tripl-#2  normamps=184 gmrac=0.0103463 gmrunits=ft diam=0.0265748 radunits=ft rac=1.353 runits=mi !1.65
+new wiredata.trip#2ser normamps=184 gmrac=0.0103463 gmrunits=ft diam=0.0265748 radunits=ft rac=1.353 runits=mi !1.65
+new wiredata.acsr-#1/0 normamps=242 gmrac=0.012912 gmrunits=ft diam=0.03316 radunits=ft rac=0.8622 runits=mi !1.13

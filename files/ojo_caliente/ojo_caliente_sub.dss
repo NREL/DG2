@@ -1,0 +1,20 @@
+redirect transformercodes.dss
+
+redirect wiredata.dss
+
+redirect linegeometry.dss
+
+redirect lines.dss
+
+redirect switches.dss
+
+redirect transformers.dss
+
+redirect fuses.dss
+
+redirect regulators.dss
+
+redirect dummynodes.dss
+
+redirect newloads.dss
+
