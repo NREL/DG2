@@ -1,2 +1,0 @@
-new xfmrcode.500-kva-step-1ph  phases=3 %r=0.825945170874426 xhl=2.1829729936745492 kvas=[500.0 500.0] %noloadloss=0.1611999988555908 conns=[wye wye] kvs=[12.47 12.47]  
-new xfmrcode.50-kva-1ph phases=1 %r=0.9188309196584509 %noloadloss=0.22200000286102198 kvas=[50.0 50.0] phases=1 windings=2 xhl=1.5022885448789156 conns=[wye wye] kvs=[7.2 7.2] 

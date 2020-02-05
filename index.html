@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Documentation for (DG)² &#8212; (DG)² 0.0.1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Load existing model" href="Load existing model.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="documentation-for-dg-2">
+<h1>Documentation for (DG)²<a class="headerlink" href="#documentation-for-dg-2" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="about-dg-2">
+<h2>About (DG)²<a class="headerlink" href="#about-dg-2" title="Permalink to this headline">¶</a></h2>
+<p>(DG)² is an impact analysis tool…</p>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<p>(DG)² can be installed by typing the following command on the command prompt:</p>
+<p>clone the repository using the following command</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">Git</span> <span class="n">clone</span> <span class="n">asdasd</span>
+</pre></div>
+</div>
+<p>Alternately, you can choose to download the repository directly from <a class="reference external" href="https://github.com/nrel/DG2">https://github.com/nrel/DG2</a>. Once the repository has been cloned, go to the folder containing setup.py file. In the command prompt enter the followiing command.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">conda</span> <span class="n">create</span> <span class="o">-</span><span class="n">n</span> <span class="n">DG2</span> <span class="n">python</span><span class="o">=</span><span class="mf">3.7</span>
+<span class="n">conda</span> <span class="n">activate</span> <span class="n">DG2</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">e</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>Once the installation ios complete, the (DG)²server can be launched by running the following command.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">launch</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>if installed correctly you should be able to see the lines appear on the console.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>Starting REPlan Server
+
+(dg2) C:\Users\alatif\Desktop\(DG)2\replan-master&gt;python launch.py
+2020-01-31 12:04:38,940 Starting Bokeh server version 0.12.7 (running on Tornado 4.4.2)
+2020-01-31 12:04:38,944 Bokeh app running at: http://localhost:5006/DG2
+2020-01-31 12:04:38,945 Starting Bokeh server with process id: 26380
+ * Serving Flask app &quot;launch&quot; (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Restarting with stat
+2020-01-31 12:04:50,590 Starting Bokeh server version 0.12.7 (running on Tornado 4.4.2)
+2020-01-31 12:04:50,592 Cannot start Bokeh server, port 5006 is already in use
+ * Debugger is active!
+ * Debugger PIN: 290-557-408
+ * Running on http://localhost:5000/ (Press CTRL+C to quit)
+</pre></div>
+</div>
+</div>
+<div class="section" id="running-simulatons">
+<h2>Running simulatons<a class="headerlink" href="#running-simulatons" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Load existing model.html">Load existing model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Uploading models.html">Uploading models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Running simulations.html">Static simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Running simulations.html#time-series-simulations">Time series simulations</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="license">
+<h2>License<a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h2>
+<p>BSD 3-Clause License</p>
+<p>Copyright (c) 2018, Alliance for Sustainable Energy LLC, All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+<ul class="simple">
+<li><p>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p></li>
+<li><p>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p></li>
+<li><p>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p></li>
+</ul>
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+</div>
+<div class="section" id="contact">
+<h2>Contact<a class="headerlink" href="#contact" title="Permalink to this headline">¶</a></h2>
+<p>Questions? Please send an email to <a class="reference external" href="mailto:aadil&#46;latif&#37;&#52;&#48;nrel&#46;gov">aadil<span>&#46;</span>latif<span>&#64;</span>nrel<span>&#46;</span>gov</a> or <a class="reference external" href="mailto:aadil&#46;latif&#37;&#52;&#48;gmail&#46;com">aadil<span>&#46;</span>latif<span>&#64;</span>gmail<span>&#46;</span>com</a></p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">(DG)²</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Load existing model.html">Load existing model</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Uploading models.html">Uploading models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Running simulations.html">Static simulations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Running simulations.html#time-series-simulations">Time series simulations</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+      <li>Next: <a href="Load existing model.html" title="next chapter">Load existing model</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Aadil Latif.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

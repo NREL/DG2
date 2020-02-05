@@ -1,9 +1,0 @@
-!new line.reg4302742 bus1=node_oh4307318.1.2.3 bus2=node_reg4302742.1.2.3 switch=y length=0.001 units=ft enabled=true phases=3 
-
-New Transformer.VREG4_A phases=1 windings=2 bank=VREG4 buses=(node_oh4307318.1 node_reg4302742.1) conns=(wye, wye) kvs=(7.2, 7.2) kvas=(10000, 10000) xhl=0.1 %loadloss=.01 Wdg=2 Maxtap=1.2 Mintap=0.9 tap=1 ppm=0 
-New Transformer.VREG4_B phases=1 windings=2 bank=VREG4 buses=(node_oh4307318.2 node_reg4302742.2) conns=(wye, wye) kvs=(7.2, 7.2) kvas=(10000, 10000) xhl=0.1 %loadloss=.01 Wdg=2 Maxtap=1.2 Mintap=0.9 tap=1 ppm=0 
-New Transformer.VREG4_C phases=1 windings=2 bank=VREG4 buses=(node_oh4307318.3 node_reg4302742.3) conns=(wye, wye) kvs=(7.2, 7.2) kvas=(10000, 10000) xhl=0.1 %loadloss=.01 Wdg=2 Maxtap=1.2 Mintap=0.9 tap=1 ppm=0 
-
-New RegControl.VREG4_A transformer=VREG4_A winding=2 vreg=120 ptratio=60 band=2
-New RegControl.VREG4_B transformer=VREG4_B winding=2 vreg=120 ptratio=60 band=2
-New RegControl.VREG4_C transformer=VREG4_C winding=2 vreg=120 ptratio=60 band=2
